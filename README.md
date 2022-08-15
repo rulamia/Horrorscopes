@@ -13,7 +13,7 @@ The dataset that contains the information we need to answer this question is the
  
 ![KC Crime DF](https://github.com/rulamia/Horrorscopes/blob/Jessica/Provisional%20Machine%20Learning%20/Resources/KC%20Crime%20DF%20example.png?raw=true)
 
-It is determined the Description and Reported Date columns hold the most relevant information to answer our question. Due to Description being a target, or dependent variable, I have concluded a Linear Regression model can be used to answer this question. To make this work effectively, the Description data will need to be transformed into numerical classifcations. With 136 unique possibilities under Description, bucketing the descriptions that are least present in the data into an "other category" will need to be done for efficiency.
+It is determined the Description and From Date columns hold the most relevant information to answer our question. Due to Description being a target, or dependent variable, I have concluded a Linear Regression model can be used to answer this question. To make this work effectively, the Description data will need to be transformed into numerical classifcations. With 136 unique possibilities under Description, bucketing the descriptions that are least present in the data into an "other category" will need to be done for efficiency.
 
 ### Using Decision Trees and Clustering to answer, "Is there a particular zodiac sign that is more likely to be a murderer?" and cheekily, "Are pisces men the worst?"
 
