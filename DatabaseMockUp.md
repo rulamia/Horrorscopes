@@ -21,4 +21,8 @@ There are currently four tables anticipated for our presentation:
  
  The KC crime data will be filtered for the zodiac season using the Zodiac moon chart. Texas death row birthdays will be matched to the Sign Date Ranges table.
  
- ![Schema] (https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
+ ![Schema] (/github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
+ 
+ ### Status 8/16/22
+ The AWS host is created, team is connected, local database is ready for table build testing.
+
