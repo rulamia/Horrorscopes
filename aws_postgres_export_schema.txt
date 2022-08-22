@@ -1,0 +1,19 @@
+AWS_DB
+-
+sql_data FK >- Export_CSV.export_data
+clean_data FK >- Clean_Data.clean_data
+
+Postgres_DB
+-
+sql_data FK >- Postgres_DB.sort_join_data
+sort_join_data FK >- Postgres_DB.export_data
+export_data FK >- Export_CSV.export_data
+
+Clean_Data
+-
+clean_data
+sql_data FK >- Postgres_DB.sql_data
+
+Export_CSV
+-
+export_data
