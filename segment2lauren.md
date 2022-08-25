@@ -1,13 +1,15 @@
 # Segment 2 Group 2 Horrorscopes
 ## Presentation/ Slides
 ### Description of Data Exploration Phase
+DARCY/LAUREN
 ### Description of Analysis Phase
+DARCY/LAUREN
 ### List of Technologies/Languages/Tools/Algorithms Used
+DARCY/LAUREN
 
 # Github Repository and Project Overview
 ## Outline of Project
-
-
+CORRINE/LAUREN
 
 # Machine Learning Model
 
@@ -70,4 +72,6 @@ As great as the kNN is for the questions we are asking, this model can be slow r
 
 # Dashboard
 ## Description of Tools
+CORRINE/LAUREN
 ## Description of interactive element(s)
+CORRINE/LAUREN
