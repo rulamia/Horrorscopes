@@ -70,4 +70,4 @@ As great as the kNN is for the questions we are asking, this model can be slow r
 
 # Dashboard
 ## Description of Tools
-## Description onf interactive element(s)
+## Description of interactive element(s)
