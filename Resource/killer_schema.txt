@@ -1,0 +1,13 @@
+KC_Dates
+-
+report_no varchar pk
+from_date datetime 
+from_time datetime
+desription varchar
+firearm_used varchar
+crime_type varchar
+
+Texas_Death_Row_Bdays
+-
+tdcj_no varchar pk
+birthdate datetime
