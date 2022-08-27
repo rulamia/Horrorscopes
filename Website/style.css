@@ -10,12 +10,17 @@ body {
 
 p {
     font-family: "Monaco", monospace;
-    font-size: 3rem; 
+    font-size: 2rem; 
+    color: #af61ef;
+}
+
+table {
+    font-family: "Monaco", monospace;
+    font-size: 1rem; 
     color: #af61ef;
 }
 
 .jumbotron {
     color: #af61ef;
     background-size: 50% 100%;
-    text-align: center;
 }
