@@ -47,4 +47,7 @@ There are currently four tables anticipated for our presentation:
   I had planned for another version of the moon chart table with a Boolean column for “Full_Moon” in place of the “Moon_Type” column currently used. I will try to       upload this updated table or perhaps include it in the code for the machine model.
 
   An inner join will be performed between the “kc_crime_v2” table and the full_moons_2009 table, to create a data set that correlates to the full moon.
-
+  
+  ### New ERD
+  
+  ![Schema] (https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/segment_2_ERD.png)
