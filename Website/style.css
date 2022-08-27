@@ -2,12 +2,20 @@ body {
     color: #000000;
     background-color: rgb(87, 24, 120);
 }
+
 .tag {
-    font-family: "Monaco", monospace; 
+    font-family: "Monaco", monospace;
     font-size: 1rem;
-   }  
+}
+
+p {
+    font-family: "Monaco", monospace;
+    font-size: 3rem; 
+    color: #af61ef;
+}
+
 .jumbotron {
     color: #af61ef;
     background-size: 50% 100%;
     text-align: center;
-  }
+}
