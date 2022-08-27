@@ -1,33 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Horrorscopes</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horrorscopes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>Horrorscopes</h1>
-          <p>Are Pisces men the worst? </p>
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Horrorscopes</h1>
+                <p>Are Pisces men the worst? </p>
+            </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="well">
-            <h5>Month:</h5>
-            <!-- <select id="selDataset"></select> -->
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          </div>
-      </div>  
+
+        <div class="row">
+            <div class="col-md-12 text-center well">
+                <p>What is your birthday?</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well">
+                    <h5>Month:</h5>
+                    <!-- <select id="selDataset"></select> -->
+                    <select id="monthSelect" onchange="monthChanged(this.value)"></select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="well">
+                    <h5>Day:</h5>
+                    <!-- <select id="selDataset"></select> -->
+                    <select id="daySelect" onchange="dayChanged(this.value)"></select>
+                </div>
+            </div>
+        </div>
 
 </body>
+<script>
+    function monthChanged(x) {
+        var days = 0
+        switch (parseInt(x)) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                days = 31
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                days = 30
+                break;
+            case 2:
+                days = 29;
+                break;
+            default:
+                console.log("Unknown month given.")
+                return;
+        }
+        $('#daySelect').children().each(function (index, elem) {elem.remove()})
+        for (var i = 1; i <= days; i++)
+        {
+            $('#daySelect').append('<option value="' + i + '">' + i + '</option>');
+        }
+    }
+
+    function dayChanged(x) {
+        var birthMonth = parseInt($('#monthSelect').val())
+        var birthDay = parseInt(x)
+        
+        var signRanges = [
+            {"startMonth": 1, "endMonth":2, "startDay":20, "endDay":18, "sign": "Aquarius"},
+            {"startMonth": 2, "endMonth":3, "startDay":19, "endDay":20, "sign": "Pisces"},
+            {"startMonth": 3, "endMonth":4, "startDay":21, "endDay":19, "sign": "Aries"},
+            {"startMonth": 4, "endMonth":5, "startDay":20, "endDay":20, "sign": "Taurus"},
+            {"startMonth": 5, "endMonth":6, "startDay":21, "endDay":20, "sign": "Gemini"},
+            {"startMonth": 6, "endMonth":7, "startDay":21, "endDay":22, "sign": "Cancer"},
+            {"startMonth": 7, "endMonth":8, "startDay":23, "endDay":22, "sign": "Leo"},
+            {"startMonth": 8, "endMonth":9, "startDay":23, "endDay":22, "sign": "Virgo"},
+            {"startMonth": 9, "endMonth":10, "startDay":23, "endDay":22, "sign": "Libra"},
+            {"startMonth": 10, "endMonth":11, "startDay":23, "endDay":21, "sign": "Scorpio"},
+            {"startMonth": 11, "endMonth":12, "startDay":22, "endDay":21, "sign": "Sagittarius"},
+            {"startMonth": 12, "endMonth":1, "startDay":22, "endDay":19, "sign": "Capricorn"},
+        ]
+
+        var sign = "Unknown"
+        for (var i = 0; i < signRanges.length; i++)
+        {
+            if (birthMonth == signRanges[i].startMonth) {
+                if (birthDay >= signRanges[i].startDay) {
+                    sign = signRanges[i].sign
+                    break
+                }
+            } else if (birthMonth == signRanges[i].endMonth) {
+                if (birthDay <= signRanges[i].endDay) {
+                    sign = signRanges[i].sign
+                    break
+                }
+            }
+        }
+        var signDiv = $('#sign')
+        if (signDiv)
+        {
+            signDiv.remove()
+        }
+        $('#container').append('<div id="sign" class="row"><div class="col-md-12 text-center well"><p>Hello ' + sign + '</p></div></div>')
+    }
+
+    $(document).ready(function () {
+        var months = [
+            { "value": 1, "name": "January" },
+            { "value": 2, "name": "February" },
+            { "value": 3, "name": "March" },
+            { "value": 4, "name": "April" },
+            { "value": 5, "name": "May" },
+            { "value": 6, "name": "June" },
+            { "value": 7, "name": "July" },
+            { "value": 8, "name": "August" },
+            { "value": 9, "name": "September" },
+            { "value": 10, "name": "October" },
+            { "value": 11, "name": "November" },
+            { "value": 12, "name": "December" }
+        ];
+        for (var index = 0; index < months.length; index++) {
+            $('#monthSelect').append('<option value=' + months[index].value + '>' + months[index].name + '</option>');
+        }
+        monthChanged(1)
+    });
+</script>
 
 </html>
