@@ -26,3 +26,25 @@ There are currently four tables anticipated for our presentation:
  ### Status 8/16/22
  The AWS host is created, team is connected, local database is ready for table build testing.
 
+ ### Status 8/16/22
+ The AWS host is created, team is connected, local database is ready for table build testing.
+
+  End Segment One.
+
+  ## Segement Two: Database Testing and Importing of Data
+  ### Creating Tables
+  Tables for our incoming data are built in this phase of the work. 
+   - Killers test
+   - KC crime data 2009
+   - Zodiac moon chart 2009
+   - Serial killer Zodiac chart
+   - Sign date ranges
+
+  Killers test is just what it sounds like, testing for import of data.
+
+  The tables above are slightly different from the original ERD and are the result of manipulation and cleaning practices. As I looked at different aspects of the       data, it seemed that it could be narrowed down a bit more and other edits needed to be done such as data conversions. This caused a challenge, as some of the data     that was thought to be cleaned had to be redressed and I hadn’t been sure of the conversions until I verified with my team.
+
+  I had planned for another version of the moon chart table with a Boolean column for “Full_Moon” in place of the “Moon_Type” column currently used. I will try to       upload this updated table or perhaps include it in the code for the machine model.
+
+  An inner join will be performed between the “kc_crime_v2” table and the full_moons_2009 table, to create a data set that correlates to the full moon.
+
