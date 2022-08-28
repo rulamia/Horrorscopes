@@ -1,6 +1,8 @@
 # Horrorscopes
 We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation.
 
+Website: https://rulamia.github.io/Horrorscopes/
+
 ## Overview
 
 # Github Repository and Project Overview
@@ -164,6 +166,16 @@ As great as the kNN is for the questions we are asking, this model can be slow r
 
 While confident our questions can be answered using Linear Regression and Decision Trees, I am not confident the Texas Death Row data has enough information to gather the results we are looking for with only 238 lines. I believe a larger dataset with more data will be needed.
 
+## Website Creation
+
+#### Website Whiteboard
+![whiteboard](./Resource/whiteboard.jpg)
+
+We are using a website to meet the dashboard criteria. The main page of the website has been completed for the week 2 deliverable. The drawn out plan for the website can be seen above as a whiteboarded mock up. The finished website will have multiple tabs to show off the project. The tabs will be as follows: 
+- Graphs (included maps)
+- Machine Learning (The graphs created from the machine learning)
+- About us (The readme and a little bit about each team member)
+- Info (Descriptions of each star sign and phases of the moon)
 
 # Dashboard
 ## Description of Tools
