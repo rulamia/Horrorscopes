@@ -80,7 +80,7 @@ There are currently four tables anticipated for our presentation:
   
   ### New ERD
   
-  ![Schema] (https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/segment_2_ERD.png)
+  ![Schema] (https://github.com/rulamia/Horrorscopes/blob/main/photos%20for%20group%20work/segment_2_ERD.png)
 ## Provisional Machine Learning Models
 
 At this time in the analysis, we have committed to a Kansas City Crime dataset with over 300,000 rows and a Texas Death Row dataset, specifically a CSV that includes the dates of birth with 238 rows. Ideally, we will be using Machine Learning to answer the following questions:
