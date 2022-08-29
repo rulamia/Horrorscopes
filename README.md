@@ -1,5 +1,6 @@
 # Horrorscopes
 #<b>SEGMENT 1 README</b>
+
 We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation.
 
 Website: https://rulamia.github.io/Horrorscopes/
@@ -61,14 +62,14 @@ There are currently four tables anticipated for our presentation:
  The KC crime data will be filtered for the zodiac season using the Zodiac moon chart. Texas death row birthdays will be matched to the Sign Date Ranges table.
  
  ![schema_erd.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
-
+ 
  ### Status 8/16/22
  The AWS host is created, team is connected, local database is ready for table build testing.
 
 
   ##### End Segment One.
 
-  ## Segement Two: Database Testing and Importing of Data
+  # <b>Segement Two: Database Testing and Importing of Data</b>
   ### Creating Tables
   Tables for our incoming data are built in this phase of the work. 
    - Killers test
@@ -88,7 +89,6 @@ There are currently four tables anticipated for our presentation:
   ### New ERD
   
   ![segment_2_ERD.png](https://github.com/rulamia/Horrorscopes/blob/main/photos%20for%20group%20work/segment_2_ERD.png)
-
 
 ## Preliminary Data Preprocessing
 
@@ -163,42 +163,6 @@ As mentioned above, these models are simple and easy to understand. There are no
 
 As great as the kNN is for the questions we are asking, this model can be slow running. Finding the optimal number of neighbors can be challenging. If any data is imbalanced, the model will not perform well. Like linear regression, this algorithm is sensitive to outliers.
 
-
-## Testing and Training
-
-### KC Crime Data and Serial Killer Data
-
-Because the KC Crime Dataset contains over 100,000 rows of information, the testing and training will begin with the standard 70% training and testing method. This will be altered throughout the process if needed, but will not be overdone as to skew the results.
-
-I will also begin with the 70/30 training and testing on the Serial Killer Data. Even though this dataset is significantly smaller, this is a popular start for training and testing the data. As we grow more familiar with the data during this process, this plan may change.
-
-## Model Choices, limitations, and benefits
-
-### KC Crime Data
-
-A linear regression model was chosen for this dataset because we are trying to answer a question asking how strong the relationship between two variables is. 
-
-#### Benefits
-
-Linear Regression is a simple model. It is easier to communicate how the model will work and interpret the results. To avoid overfitting, the model can be regularized. New data can be plugged in easily if more questions come up in the analysis.
-
-#### Limitations
-
-Even though the model can be regularized to avoid overfitting, linear regression models are prone to overfitting. With such a large dataset, there is a possibility of outliers that will skew the data.
-
-### Serial Killer Data
-
-The kNN model was chosen for the Serial Killer Data because it is also simple to understand classification model, which will be needed to group the zodiac signs and kill counts.
-
-#### Benefits
-
-As mentioned above, these models are simple and easy to understand. There are no assumptions of the data like a linear regression model would have. This model is ever evolving and adjustable to multi-class problems.
-
-#### Limitations
-
-As great as the kNN is for the questions we are asking, this model can be slow running. Finding the optimal number of neighbors can be challenging. If any data is imbalanced, the model will not perform well. Like linear regression, this algorithm is sensitive to outliers.
-
-
 ### Summary
 
 While confident our questions can be answered using Linear Regression and Decision Trees, I am not confident the Texas Death Row data has enough information to gather the results we are looking for with only 238 lines. I believe a larger dataset with more data will be needed.
@@ -214,15 +178,17 @@ We are using a website to meet the dashboard criteria. The main page of the webs
 - About us (The readme and a little bit about each team member)
 - Info (Descriptions of each star sign and phases of the moon)
 
-# Dashboard
-## Description of Tools
-
+## Dashboard
+### Description of Tools
 For the dashboard (the website) we plan to utilize the following tools:
 - CSS
 - HTML
 - Javascript
 - Tableau
 
-## Description of interactive element(s)
+
+### Description of interactive element(s)
 Users will be able to enter their date of birth and the star sign will be returned along with a list of the top 10 most prolific serial killers with the same sign.
 
+### Google Slides
+Link to google slides https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
