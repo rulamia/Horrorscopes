@@ -1,5 +1,5 @@
 # Horrorscopes
-#<b>SEGMENT 1 README</b>
+# <b>SEGMENT 1 README</b>
 We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation.
 
 Website: https://rulamia.github.io/Horrorscopes/
