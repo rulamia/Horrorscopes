@@ -1,0 +1,12 @@
+Export_CSV
+-
+export_data FK >- Presentation.result_data
+
+ML_Model
+-
+export_data FK >- Export_CSV.export_data
+result_data FK >- ML_Model.export_data
+
+Presentation
+-
+result_data FK >- ML_Model.result_data
