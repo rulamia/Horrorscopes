@@ -60,6 +60,11 @@ There are currently four tables anticipated for our presentation:
   the database could have been constructed more easily. As it stands the database should be functional and complete within the next two days. Although this is slightly
   behind schedule, it doesn't appear to affect the finished project.
   
+    
   ### New ERD
   
   ![Schema] (https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/segment_2_ERD.png)
+
+ ### Updated database
+ The database has been reconstructed and the connection string now works. Data can be uploaded remotely and hosted on Amazon Web Services.
+ 
