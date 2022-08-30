@@ -1,0 +1,28 @@
+Data_Collection
+-
+io_data varchar pk
+clean_data varchar FK >- AWS_DB.clean_data
+
+AWS_DB
+-
+clean_data varchar pk
+sql_data varchar FK >- Postgres_DB.sql_data
+
+Postgres_DB
+-
+sql_data varchar pk FK >- Postgres_DB.sort_join_data
+sort_join_data varchar FK >- Postgres_DB.export_data
+export_data varchar FK >- Export_csv.export_data
+
+Export_csv
+-
+export_data varchar pk FK >- ML_Model.export_data
+
+ML_Model
+-
+export_data varchar pk
+result_data varchar FK >- Presentaion.result_data
+
+Presentaion
+-
+result_data pk

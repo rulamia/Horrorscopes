@@ -1,0 +1,501 @@
+index,name,born,proven_victims,estimated_victims,zodiac_sign
+0,"Ables, Tony",1954-12-28,4,4+,capricorn
+1,"Agrue, John",1947-09-11,3,3+,virgo
+2,"Albanese, Charles",1937-06-13,3,3,gemini
+3,"Albright, Charles",1933-08-10,1,3,leo
+4,"Alcala, Rodney",1943-08-23,8,50–230,virgo
+5,"Alix, Franklin DeWayne",1975-08-06,3,4+,leo
+6,"Allen, Howard",1949-02-10,3,3,aquarius
+7,"Allen, Quincy",1979-11-07,4,4,scorpio
+8,"Allridge, Ronald",1960-09-27,3,3,libra
+9,"Amati, Tony Ray",1976-06-28,3,3,cancer
+10,"Anderson, Stephen Wayne",1953-07-08,9,9+,cancer
+11,"Angelo, Richard",1962-08-29,4,10,virgo
+12,"Archerd, William Dale",1912-05-05,3,6,taurus
+13,"Arguelles, Roberto",1962-02-14,4,4+,
+14,"Armstrong, John Eric",1973-11-23,5,18,sagittarius
+15,"Atkins, Benjamin",1968-08-26,11,11,virgo
+16,"Avila-Torrez, Jorge",1988-08-18,3,3,leo
+17,"Balaam, Anthony",1965-07-09,4,4,cancer
+18,"Baldi, Joseph",1941-01-16,4,4,capricorn
+19,"Ball, Joe",1896-01-07,2,20,capricorn
+20,"Barber, Danny",1955-05-08,4,4,taurus
+21,"Barfield, Velma",1932-10-29,1,6,scorpio
+22,"Barone, Cesar",1960-12-04,4,4+,sagittarius
+23,"Barrett, Eugene",1931-06-30,3,3,cancer
+24,"Baughman, John",1941-10-04,1,3,libra
+25,"Baumeister, Herb",1947-04-07,11,20,aries
+26,"Baxter, Patrick",1969-04-28,3,3,taurus
+27,"Beamon, Rocky",1977-12-10,3,3,sagittarius
+28,"Beardslee, Donald",1943-05-13,3,3,taurus
+29,"Beck, Martha",1914-12-17,3,20,sagittarius
+30,"Bell, Cimarron",1974-04-07,4,4,aries
+31,"Berdella, Robert",1949-01-31,6,6,aquarius
+32,"Berkowitz, David",1953-06-01,6,6,gemini
+33,"Betterton, Monroe",1872-03-24,3,3,aries
+34,"Bianchi, Kenneth",1951-05-22,12,12,gemini
+35,"Biehler, Robert",1934-08-05,4,4,leo
+36,"Bishop, Arthur Gary",1952-09-29,5,5,libra
+37,"Bittaker, Lawrence",1940-09-27,5,5,libra
+38,"Bittrolff, John",1966-07-01,2,4+,cancer
+39,"Bladel, Rudy",1932-12-08,3,7,sagittarius
+40,"Blair, Terry",1961-09-16,7,9,virgo
+41,"Blinston, Ryan Scott",1983-08-26,3,3,virgo
+42,"Bolin, Oscar Ray",1962-01-22,4,4+,aquarius
+43,"Bolsinger, John Charles",1957-09-17,4,4,virgo
+44,"Bonin, William",1947-01-08,21,36+,capricorn
+45,"Bounds, Dallen",1971-08-09,4,4+,leo
+46,"Bowles, Gary Ray",1962-01-25,6,6+,aquarius
+47,"Boyd, Charles Anthony",1959-08-17,3,3,leo
+48,"Bradford, William Richard",1946-05-18,2,28+,taurus
+49,"Bradley, James Opelton",1962-09-08,3,3,virgo
+50,"Brant, Joe",1969-07-13,4,4+,cancer
+51,"Brashers, Robert Eugene",1958-03-13,3,3+,pisces
+52,"Breslin, Joseph",1950-05-21,3,3,gemini
+53,"Bright, Larry",1966-07-08,8,8+,cancer
+54,"Britt, Eugene",1957-11-04,7,10,scorpio
+55,Briley Brothers,1954-03-26,12,21,aries
+56,"Broadnax, Donald",1961-01-01,3,3,capricorn
+57,"Brooks, Shelly",1969-01-22,7,20+,aquarius
+58,"Brown, Curtis Don",1958-08-02,3,18,leo
+59,"Brown, Debra Denise",1955-11-06,8,8,scorpio
+60,"Brown, Kenyel",1979-07-03,6,6,cancer
+61,"Browne, Robert Charles",1952-10-31,2,2+,scorpio
+62,"Brudos, Jerry",1939-01-31,4,4+,aquarius
+63,"Brummett, Lyle",1956-12-26,2,3,capricorn
+64,"Buell, Robert Anthony",1940-09-10,2,3+,virgo
+65,"Buenoano, Judy",1943-04-04,3,3+,aries
+66,"Bullock, David",1960-11-13,6,6+,scorpio
+67,"Bunday, Thomas",1948-09-28,5,6,libra
+68,"Bundy, Carol M.",1942-08-26,7,7,virgo
+69,"Bundy, Ted",1946-11-24,28,30+,sagittarius
+70,"Buono Jr., Angelo",1934-10-05,9,10,libra
+71,"Busch, Henry",1931-12-30,3,3,capricorn
+72,"Carignan, Harvey",1927-05-18,3,5+,
+73,"Caro, Fernando Eros",1949-12-03,3,5+,sagittarius
+74,"Carpenter, David",1930-05-06,7,10+,taurus
+75,"Carr, Robert Frederick",1943-12-22,4,4,capricorn
+76,"Carr, Thomas D.",1846-03-06,1,15,pisces
+77,"Carson, Michael Bear",1950-11-28,3,12,sagittarius
+78,"Carson, Suzan",1950-11-28,3,12,sagittarius
+79,"Castro, Edward",1950-01-26,3,3,aquarius
+80,"Catoe, Jarvis",1905-10-06,8,11,libra
+81,"Chandler, Oba",1946-10-11,4,4+,libra
+82,"Chase, Richard",1950-05-23,6,6,gemini
+83,"Chavez, Juan Rodriguez",1968-04-27,12,12,taurus
+84,"Childers, James",1964-02-08,2,5+,aquarius
+85,"Childs, Terry",1955-09-22,5,12,virgo
+86,"Cherry, Ervin",1966-03-26,3,3,aries
+87,"Chester, Elroy",1969-06-14,5,5,gemini
+88,"Christiansen, Thor Nis",1957-12-28,4,4,capricorn
+89,"Christopher, Joseph",1955-07-26,12,12+,leo
+90,"Clark, Doug",1948-03-10,7,7,pisces
+91,"Clark, Hadden",1952-07-31,2,2+,leo
+92,"Clark, Roland E.",1911-08-01,2,9,leo
+93,"Clark, Vernon Lee",1955-12-28,4,6+,capricorn
+94,"Clement, Mary",1863-02-16,4,4,aquarius
+95,"Cline, Alfred Leonard",1888-03-12,9,11,pisces
+96,"Code, Nathaniel",1956-03-12,8,12,pisces
+97,"Coffman, Cynthia",1962-01-19,4,4,capricorn
+98,"Coleman, Alton",1955-11-06,8,8,scorpio
+99,"Collins, Harvey",1925-10-05,3,3,libra
+100,"Colvin, Dellmus",1959-08-03,7,7+,leo
+101,"Conde, Rory Enrique",1965-06-14,6,6,gemini
+102,"Cook, Anthony",1949-03-09,9,9+,pisces
+103,"Cook, Nathaniel",1949-03-09,9,9+,pisces
+104,"Cooper, Samuel",1977-01-12,5,5,capricorn
+105,"Corll, Dean",1939-12-24,28,28+,capricorn
+106,"Corona, Juan",1934-02-07,25,25+,aquarius
+107,"Corwin, Daniel Lee",1958-09-13,3,3,virgo
+108,"Costa, Tony",1944-08-02,4,8,leo
+109,"Cota, Fernando",1946-06-20,6,6,gemini
+110,"Cottingham, Richard",1946-11-25,11,85–100,sagittarius
+111,"Covington, Juan",1962-03-03,3,3+,pisces
+112,"Cowan, Mary",1863-03-08,6,6,pisces
+113,"Cox, Frederick Pete",1953-08-27,3,3,virgo
+114,"Cox, Scott William",1963-11-03,5,20+,scorpio
+115,"Craine, Louis",1957-01-06,4,5+,capricorn
+116,"Creech, Thomas Eugene",1950-09-09,5,42,virgo
+117,"Cullen, Charles",1960-02-22,10,40+,pisces
+118,"Cunanan, Andrew",1969-08-31,5,5,virgo
+119,"Dahmer, Jeffrey",1960-05-21,17,17,gemini
+120,"Danielson, Robert Wayne",1946-08-25,7,7,virgo
+121,"Danks, Joseph Martin",1962-06-17,7,7,gemini
+122,"Davis, Bruce Alan",1948-09-03,3,33,virgo
+123,"Davis, Charles William",1947-06-18,3,3+,gemini
+124,"Davis, Frank",1953-01-29,3,3,aquarius
+125,"Davis, Girvies",1958-01-20,4,9+,aquarius
+126,"DeAngelo, Joseph James",1945-11-08,13,13+,scorpio
+127,"Dennis, Jerome",1966-12-14,5,5,sagittarius
+128,"Dewantoro, Harnoko",1964-11-03,3,3,scorpio
+129,"Dieteman, Samuel",1973-02-04,8,8,aquarius
+130,"Dillon, Thomas",1950-07-09,5,5+,cancer
+131,"Dodd, Westley Allan",1961-07-03,3,3,cancer
+132,"Dominique, Ronald",1964-01-09,23,23+,capricorn
+133,"Dorsey, Leon",1975-11-17,3,3,scorpio
+134,"Doss, Nannie",1905-11-04,8,11,scorpio
+135,"Duffy, Charles Lee",1976-05-10,3,3,taurus
+136,"Dugan, Brian",1956-09-23,3,3,libra
+137,"Duncan, Joseph Edward",1963-02-25,5,7,pisces
+138,"Duncan, Vender",1928-02-18,3,3,aquarius
+139,"Durousseau, Paul",1970-08-11,7,7+,leo
+140,"Edwards, Andrew David",1958-03-06,4,4,pisces
+141,"Eichinger, John",1972-02-18,4,4,aquarius
+142,"Ellis, Walter E.",1960-06-24,8,10+,cancer
+143,"Engleman, Glennon",1927-02-06,5,7+,aquarius
+144,"Erskine, Scott",1962-12-22,3,3+,capricorn
+145,"Ervin, Joe Michael",1951-06-25,6,6,cancer
+146,"Escobar, Ramon",1971-05-06,7,7,taurus
+147,"Evans, Gary",1954-10-07,5,5,libra
+148,"Evonitz, Richard",1963-07-29,3,3+,leo
+149,"Ewell, John",1957-03-25,4,4,aries
+150,"Eyler, Larry",1952-12-21,21,24,sagittarius
+151,"Falling, Christine",1963-03-12,6,6,pisces
+152,"Falls, Neal",1969-09-24,0,10+,libra
+153,"Fautenberry, John",1963-07-04,5,6,cancer
+154,"Fayne, Lorenzo",1971-04-02,6,6,aries
+155,"Feltner, Jeffrey",1962-11-21,7,7,scorpio
+156,"Ferguson, John Errol",1948-02-27,8,12,pisces
+157,"Fernandes, Roberto Wagner",1965-04-26,3,4+,taurus
+158,"Fernandez, Raymond",1914-12-17,3,20,sagittarius
+159,"Figueroa, Danny",1959-09-24,3,3,libra
+160,"Fish, Albert",1870-05-19,3,8+,taurus
+161,"Flowers, Norman",1974-03-15,3,3,pisces
+162,"Ford, Lester",1963-02-11,3,3,aquarius
+163,"Ford, Wayne Adam",1961-12-03,4,4+,sagittarius
+164,"Forte, Linwood",1964-07-25,3,4,leo
+165,"Fountain, Clayton Anthony",1955-09-12,5,5,virgo
+166,"Francois, Kendall",1971-07-26,8,10+,leo
+167,"Franklin, Joseph Paul",1950-04-13,11,22,aries
+168,"Franklin Jr., Lonnie David",1952-08-30,10,25+,virgo
+169,"Gacy, John Wayne",1942-03-17,33,33-45+,pisces
+170,"Gallego, Gerald",1946-07-17,10,10,cancer
+171,"Gargiulo, Michael",1976-02-15,3,10,aquarius
+172,"Garrison, Wayne Henry",1959-08-26,3,3,virgo
+173,"Gary, Carlton",1950-09-24,4,8+,libra
+174,"Gay, Randy",1958-09-01,3,3,virgo
+175,"Gaynor, Alfred",1966-12-10,9,9,sagittarius
+176,"Gecht, Robin",1953-11-30,18,18,sagittarius
+177,"Gein, Ed",1906-08-27,2,7,virgo
+178,"Geralds, Hubert",1964-11-13,5,5,scorpio
+179,"Gibson, William Clyde",1957-10-10,3,3+,
+180,"Gilbert, Kristen",1967-11-13,4,4+,scorpio
+181,"Giles, Bernard",1953-04-09,5,5,aries
+182,"Gillis, Sean Vincent",1962-06-24,8,8,cancer
+183,"Gilyard, Lorenzo",1950-05-24,12,13,gemini
+184,"Glaze, Billy",1943-07-13,3,20+,cancer
+185,"Gleason, Robert Charles",1970-04-10,3,3+,aries
+186,"Goble, Sean Patrick",1966-11-01,3,3+,scorpio
+187,"Gomez, Lloyd",1923-12-06,9,9,sagittarius
+188,"Gordon, Steven Dean",1969-02-03,4,5,aquarius
+189,"Gore, David Alan",1953-08-21,6,6,leo
+190,"Gore, Marshall Lee",1963-08-17,2,2+,leo
+191,"Gosnell, Kermit Barron",1941-02-09,4,7+,aquarius
+192,"Goudeau, Mark",1964-09-06,9,9,virgo
+193,"Graham, Gwendolyn",1963-08-06,5,6,leo
+194,"Graham, Harrison",1959-09-09,7,7,virgo
+195,"Grant, Gary",1951-06-29,4,4,cancer
+196,"Granviel, Kenneth",1950-08-04,7,9,leo
+197,"Grate, Shawn",1976-08-08,5,5,leo
+198,"Gray, Dana Sue",1957-12-06,3,3,sagittarius
+199,"Gray, Marvin",1954-08-07,3,41,leo
+200,"Gray, Ronald",1965-08-14,4,4,leo
+201,"Green, Ricky Lee",1960-12-27,4,12,capricorn
+202,"Greenawalt, Randy",1949-02-24,7,9,pisces
+203,"Greenwell, Harry Edward",1944-12-09,3,3,sagittarius
+204,"Greenwood, Vaughn",1944-01-19,11,11,capricorn
+205,"Gretzler, Douglas",1951-05-21,11,17,gemini
+206,"Gribble, Timothy",1963-08-27,2,3,virgo
+207,"Groves, Vincent",1954-04-19,7,20+,aries
+208,"Halbower, Rodney",1948-06-27,2,5,cancer
+209,"Hance, William Henry",1951-11-10,4,4,scorpio
+210,"Hankins, Terry",1974-10-10,5,5,libra
+211,"Hansen, Robert",1939-02-15,17,21+,aquarius
+212,"Harding, Donald Eugene",1949-03-01,6,7+,pisces
+213,"Harris, Michael Darnell",1963-03-07,4,10,pisces
+214,"Harris, Robert Wayne",1972-02-28,6,6,pisces
+215,"Harrison, Kenneth",1938-09-04,4,4,virgo
+216,"Harvey, Donald",1952-04-15,37,80,aries
+217,"Hassell, George",1888-07-05,13,13,cancer
+218,"Hatcher, Charles Ray",1929-07-16,2,16,cancer
+219,"Hausner, Dale",1973-02-04,8,8,aquarius
+220,"Hayes, Robert",1982-03-12,3,7+,pisces
+221,"Hazzard, Linda",1867-12-18,1,13,sagittarius
+222,"Heirens, William",1928-11-15,3,3,scorpio
+223,"Henley, Elmer Wayne",1956-05-09,6,8+,taurus
+224,"Henry, John Ruthell",1951-01-16,3,3,capricorn
+225,"Hernandez, Ramon Torres",1971-11-08,3,5+,scorpio
+226,"Herzog, Loren",1965-12-08,3,19,sagittarius
+227,"Hickey, J. Frank",1865-10-29,3,3,scorpio
+228,"Hickson, Monroe",1908-07-08,4,4,cancer
+229,"Hill, Ivan",1961-03-30,9,9+,aries
+230,"Hill, Walter",1935-02-07,5,5,aquarius
+231,"Hilton, Gary",1946-11-22,4,4+,sagittarius
+232,"Hittle, Daniel",1950-03-01,7,7,pisces
+233,"Holman, Richard",1958-01-20,4,9+,aquarius
+234,"Holmes, H. H.",1861-05-16,9,27+,taurus
+235,"Hooker, John Michael",1953-10-09,3,3,libra
+236,"Honken, Dustin Lee",1968-03-22,5,5,aries
+237,"Hopkins, John W.",1953-06-03,3,3+,gemini
+238,"Howell, William Devin",1970-02-11,7,7,aquarius
+239,"Hoyt, Waneta",1946-05-13,5,5,taurus
+240,"Hughes, Mervin Ray",1969-01-27,3,4+,aquarius
+241,"Hughes, Philip Joseph",1948-01-29,3,3+,aquarius
+242,"Huntsman, Megan",1975-02-26,6,6,pisces
+243,"Hyatt, Terry",1957-03-28,3,3+,aries
+244,"Ingle, Phillip Lee",1961-08-07,4,4,leo
+245,"Irvin, Leslie",1924-04-02,6,6+,aries
+246,"Irvin, Marvin",1949-05-04,3,3,taurus
+247,"Jablonski, Phillip Carl",1946-01-03,5,5,capricorn
+248,"Jackson, Calvin",1948-03-05,9,9,pisces
+249,"Jackson, Charles",1937-02-12,8,8+,aquarius
+250,"Jackson, Homer",1959-12-18,4,4+,sagittarius
+251,"Jackson, Ray",1967-08-28,6,6,virgo
+252,"Jackson, Vickie Dawn",1966-02-13,10,10+,aquarius
+253,"Jennings, Desmond Domnique",1971-10-04,5,20,libra
+254,"Jesperson, Keith Hunter",1955-04-06,8,8+,aries
+255,"Johnson, Matthew Steven",1963-05-24,3,5,gemini
+256,"Johnson, Milton",1950-05-15,10,10+,
+257,"Johnson, Raymond Eugene",1974-03-26,3,3,aries
+258,"Johnson, Vincent",1969-01-06,5,5,capricorn
+259,"Jones, Andre Vernell",1956-07-22,5,8,cancer
+260,"Jones, Daniel O.",1969-09-26,4,4,libra
+261,"Jones, Genene",1950-07-13,2,60+,cancer
+262,"Jones, Jack Harold",1964-08-10,3,3+,leo
+263,"Joubert, John",1963-07-02,3,3,cancer
+264,"Joyner, Anthony",1962-05-26,6,18,gemini
+265,"Junco, Francisco del",1957-08-03,4,4,leo
+266,"Kadamovas, Jurijus",1966-10-22,5,5,libra
+267,"Kallinger, Joseph",1935-12-11,3,3,sagittarius
+268,"Kaprat, Edwin",1964-09-21,6,6,virgo
+269,"Kearney, Patrick",1939-09-24,21,43,libra
+270,"Kee, Arohn",1973-09-18,3,3+,virgo
+271,"Kelley, John William",1963-03-09,3,3,pisces
+272,"Kelly, Alvin Andrew",1951-03-14,4,4,pisces
+273,"Kemper, Edmund",1948-12-18,10,10,sagittarius
+274,"Kibbe, Roger",1939-05-21,8,8+,gemini
+275,"Kimball, Scott Lee",1966-09-21,4,5+,virgo
+276,"Kimes, Sante",1934-07-24,2,3,leo
+277,"Kinne, Sharon",1939-11-30,3,3,sagittarius
+278,"Kirkland, Anthony",1968-09-13,5,6,virgo
+279,"Knight, Thomas",1951-02-04,4,4,aquarius
+280,"Knighton, Robert Wesley",1941-02-05,5,5,aquarius
+281,"Knorr, Theresa",1946-03-14,2,3,pisces
+282,"Knotek, Michelle",1954-04-15,2,3,aries
+283,"Knowles, Paul John",1946-04-25,18,35,taurus
+284,"Koedatich, James",1948-06-12,4,4,gemini
+285,"Kohlhepp, Todd",1971-03-07,7,10+,pisces
+286,"Kokoraleis, Andrew",1953-11-30,18,18,sagittarius
+287,"Kokoraleis, Thomas",1953-11-30,18,18,sagittarius
+288,"Kondro, Joseph",1959-05-19,2,3+,taurus
+289,"Koster, Brent",1945-03-22,3,3,aries
+290,"Kraft, Randy",1945-03-19,16,67,pisces
+291,"Krajcir, Timothy",1944-11-28,9,9,sagittarius
+292,"Kudzinowski, Peter",1903-08-13,3,3,leo
+293,"LaBarre, Sheila",1958-07-04,2,4,cancer
+294,"Lagrone, Edward",1957-03-03,4,6,pisces
+295,"Lake, Leonard",1945-10-29,11,25,scorpio
+296,"LaLaurie, Delphine",1787-03-19,?,?,pisces
+297,"Lane, Adam Leroy",1964-08-07,2,2+,leo
+298,"LaRette, Anthony",1951-10-01,16,31,libra
+299,"Laudenberg, Adolph",1926-06-13,4,6,gemini
+300,"Lee, Derrick Todd",1968-11-05,7,7+,scorpio
+301,"Lewingdon, Gary",1940-02-14,10,10,aquarius
+302,"Lewingdon, Thaddeus",1940-02-14,9,9,aquarius
+303,"Liberty, Robert",1947-05-15,3,3,taurus
+304,"Lindahl, Bruce",1953-01-29,2,12+,aquarius
+305,"Little, Samuel",1940-06-07,61,93+,gemini
+306,"Long, Bobby Joe",1953-10-14,10,10+,libra
+307,"Long, Neal",1927-09-19,4,7+,virgo
+308,"Lucas, Henry Lee",1936-08-23,3,200+,virgo
+309,"Lyles, Anjette",1925-08-23,4,4,virgo
+310,"Lynch, Franklin",1955-07-21,3,13,cancer
+311,"Madison, Michael",1977-10-15,3,3+,libra
+312,"Majors, Orville Lynn",1961-04-24,6,130,taurus
+313,"Malone, Kelvin Shelby",1961-01-10,4,5+,capricorn
+314,"Malvo, Lee Boyd",1985-02-18,7,17,aquarius
+315,"Marquette, Richard Laurence",1934-12-12,3,3,sagittarius
+316,"Martin, James David",1971-12-11,3,3,sagittarius
+317,"Masini, Frank",1944-04-14,4,4,aries
+318,"Mason, David",1956-12-02,5,6,sagittarius
+319,"Mason, Samuel",1739-11-08,20,20+,scorpio
+320,"Matthews, Eric",1974-05-03,4,4,taurus
+321,"Maury, Robert",1958-02-24,3,3+,pisces
+322,"Maust, David Edward",1954-04-05,5,5,aries
+323,"Mays, Reta",1975-06-16,7,8+,
+324,"McCoy, Stephen",1945-01-30,3,3,aquarius
+325,"McFadden, Jerry Walter",1948-03-21,4,4,aries
+326,"McKnight, Gregory",1976-11-14,3,3,
+327,"McWatters, Eugene",1978-06-28,3,3,cancer
+328,"Meirhofer, David",1949-06-08,4,4,gemini
+329,"Melanson, Roy",1937-02-13,3,5+,aquarius
+330,"Metheny, Joe",1953-03-02,5,10,pisces
+331,"Mikhel, Iouri",1966-10-22,5,5,libra
+332,"Miller, Donald Gene",1954-12-28,4,4,capricorn
+333,"Miller, Joseph Daniel",1964-09-02,5,5+,virgo
+334,"Miller, Joseph Robert",1955-01-15,6,6+,capricorn
+335,"Morris, Cory",1978-05-10,5,5+,taurus
+336,"Mors, Frederick",1889-10-02,8,8,libra
+337,"Morse, Hugh",1930-01-09,4,4+,capricorn
+338,"Morton, David Bruce",1959-05-14,3,3+,taurus
+339,"Mosley, Eddie",1947-03-31,8,16+,aries
+340,"Muhammad, John Allen",1960-12-31,7,17,capricorn
+341,"Mullin, Herbert",1947-04-18,11,13,aries
+342,"Mullins, Michael",1961-06-28,3,3,cancer
+343,"Nance, Wayne",1955-10-18,0,5+,libra
+344,"Naso, Joseph",1934-01-07,6,10,capricorn
+345,"Neelley, Alvin",1953-07-15,2,2,cancer
+346,"Neelley, Judith",1953-07-15,2,2,cancer
+347,"Newman, Allan Patterson",1951-02-22,4,4,pisces
+348,"Ng, Charles",1960-12-24,11,25,capricorn
+349,"Nixon, Robert",1919-07-19,3,5,cancer
+350,"Noe, Marie",1928-08-23,8,8,virgo
+351,"Norris, Roy",1940-09-27,5,5,libra
+352,"Northcott, Gordon Stewart",1906-11-09,3,20,scorpio
+353,"Ocampo, Itzcoatl",1988-03-20,6,6,pisces
+354,"O'Dell, Diane",2003-05-17,3,4,taurus
+355,"Page, Ivan",1969-04-07,3,3,aries
+356,"Panzram, Carl",1891-06-28,5,22,cancer
+357,"Pardo, Manuel",1956-09-24,9,9,libra
+358,"Paster, James",1945-01-30,3,5,aquarius
+359,"Peete, Louise",1880-09-20,3,3+,virgo
+360,"Perkins, Reginald",1955-04-29,3,6,taurus
+361,"Peterson, Christopher",1969-01-20,4,7,aquarius
+362,"Pierce, William",1931-10-11,9,9+,libra
+363,"Piper, Thomas W.",1849-04-22,2,2+,taurus
+364,"Powers, Harry",1893-11-17,5,5+,scorpio
+365,"Price, Craig",1973-10-11,4,4,libra
+366,"Price, Larme",1972-06-27,4,4,cancer
+367,"Prieto, Alfredo",1965-11-18,9,9,scorpio
+368,"Prince Jr., Cleophus",1967-07-24,6,6,leo
+369,"Pruett, Marion Albert",1949-10-04,5,5,libra
+370,"Puente, Dorothea",1929-01-09,9,15,capricorn
+371,"Rader, Dennis",1945-03-09,10,10,pisces
+372,"Ralston, Larry",1949-07-05,4,5+,cancer
+373,"Ramirez, Richard",1960-02-29,15,15,pisces
+374,"Ranes, Danny",1945-03-22,4,4,aries
+375,"Ranes, Larry",1945-03-22,1,5,aries
+376,"Rardon, Gary",1943-09-04,4,4,virgo
+377,"Rasmussen, Terry Peder",1943-12-23,6,6+,capricorn
+378,"Ray, Clifton",1958-07-27,3,6+,leo
+379,"Red Dog, James Allen",1954-02-01,5,5,aquarius
+380,"Reece, William Lewis",1959-07-01,4,4+,cancer
+381,"Reeves, Jack",1940-06-20,4,4,
+382,"Reid, Paul Dennis",1957-11-12,7,7,scorpio
+383,"Rembert, Robert",1970-03-15,5,5+,pisces
+384,"Reséndiz, Ángel Maturino",1960-08-01,10,16,leo
+385,"Rhoades, Paul Ezra",1957-01-18,3,7+,capricorn
+386,"Rhoades, Robert Ben",1945-11-22,3,50+,sagittarius
+387,"Rice, Stanley",1942-08-07,3,5+,leo
+388,"Rich, Darrell Keith",1955-02-14,4,4,aquarius
+389,"Richards, Stephen Dee",1856-03-18,9,9+,pisces
+390,"Richmond, Earl",1961-11-06,4,4,scorpio
+391,"Ridgway, Gary",1949-02-18,49,90+,aquarius
+392,"Rifkin, Joel",1959-01-20,9,17+,aquarius
+393,"Rissell, Montie",1958-11-28,5,5,sagittarius
+394,"Ritchie, James Dale",1976-11-04,5,5+,scorpio
+395,"Rivera, Reinaldo",1963-09-13,4,4,virgo
+396,"Robinson, Harvey Miguel",1974-12-06,3,3,sagittarius
+397,"Robinson, John Edward",1943-12-27,8,8+,capricorn
+398,"Roche, John Francis",1927-09-06,4,6,virgo
+399,"Rodriguez, Antonio",1988-10-28,3,3,scorpio
+400,"Rogers, Dayton Leroy",1953-09-30,7,8+,libra
+401,"Rogers, Glen Edward",1962-07-15,4,5,cancer
+402,"Rolling, Danny",1954-05-26,8,8,gemini
+403,"Ross, Michael Bruce",1959-07-26,8,8+,leo
+404,"Roye, Norman",1935-09-06,3,3,virgo
+405,"Rozier, Robert",1955-07-28,4,7,leo
+406,"Runge, Paul",1970-01-28,7,8+,aquarius
+407,"Saenz, Kimberly Clark",1973-11-03,5,10+,scorpio
+408,"Saldivar, Efren",1969-09-30,6,50+,libra
+409,"Samartaney, Malik",1953-06-07,3,6,gemini
+410,"Sanchez, Altemio",1958-01-19,3,3+,capricorn
+411,"Sapp, William",1962-03-22,3,3+,aries
+412,"Schmid, Charles",1942-07-08,3,4,cancer
+413,"Schmidt, Helmuth",1876-07-04,1,4+,cancer
+414,"Seda, Heriberto",1967-07-31,3,3,leo
+415,"Segundo, Juan",1963-01-25,4,4+,aquarius
+416,"Sells, Tommy Lynn",1964-06-28,6,22+,cancer
+417,"Severance, Charles",1960-09-25,3,3,libra
+418,"Sharp, Michael Eugene",1954-04-24,3,5+,taurus
+419,"Shaw, Sebastian",1967-11-28,3,13,sagittarius
+420,"Shawcross, Arthur",1945-06-06,12,14,gemini
+421,"Shermantine, Wesley",1965-12-08,4,19,sagittarius
+422,"Shore, Anthony Allen",1962-06-25,4,4+,cancer
+423,"Shulman, Robert",1954-03-28,5,5,aries
+424,"Siebert, Daniel Lee",1954-06-17,10,13,gemini
+425,"Silva, Mauricio",1959-10-25,4,4,scorpio
+426,"Silveria Jr., Robert Joseph",1959-03-03,9,14+,pisces
+427,"Simmons, Beoria",1954-05-17,3,3,taurus
+428,"Sinclair, Charles T.",1946-11-24,13,13+,sagittarius
+429,"Smith, Gayno",1938-01-23,6,6,aquarius
+430,"Smith, Lemuel",1941-07-23,5,6,leo
+431,"Smith, Mark Alan",1949-06-27,4,12+,cancer
+432,"Smith, William Scott",1959-04-29,4,4+,taurus
+433,"Snyder, Leroy",1931-02-13,7,7,aquarius
+434,"Solomon Jr., Morris",1944-03-15,6,7,pisces
+435,"Soper, Edward Bates",1855-02-07,5,5,aquarius
+436,"Southard, Lyda",1892-10-16,6,6,libra
+437,"Sowell, Anthony",1959-08-19,11,11,leo
+438,"Spangler, Robert",1933-01-10,4,4,capricorn
+439,"Spencer, Timothy Wilson",1962-03-17,4,5,pisces
+440,"Spillman, Jack Owen",1969-08-30,3,3,virgo
+441,"Spisak, Frank",1951-06-06,3,3,gemini
+442,"Spreitzer, Edward",1953-11-30,18,18,sagittarius
+443,"Stano, Gerald",1951-09-12,22,41+,virgo
+444,"Stayner, Cary",1961-08-13,4,4,leo
+445,"Stevens, Charles",1969-03-19,4,4,pisces
+446,"Stickles, Martin",1870-02-07,3,3,aquarius
+447,"Stokes, Winford",1951-03-21,3,3,aries
+448,"Suff, William",1950-08-20,12,22,leo
+449,"Sully, Anthony",1944-01-02,6,6,capricorn
+450,"Sumpter, Michael",1947-09-26,3,3,libra
+451,"Surratt, Edward Arthur",1941-08-08,7,18+,leo
+452,"Sutton, Nicholas Todd",1961-07-15,4,4,cancer
+453,"Swango, Michael",1954-10-21,4,60,libra
+454,"Taborsky, Joseph ""Mad Dog""",1924-03-23,7,7,aries
+455,"Taylor, Kevin",1974-06-11,4,4,gemini
+456,"Terry, Charles E.",1930-05-26,1,4+,gemini
+457,"Thomas Jr., John Floyd",1936-07-26,7,15+,leo
+458,"Thompson, William Paul",1938-05-02,3,6,taurus
+459,"Tinning, Marybeth",1942-09-11,2,9,virgo
+460,"Toole, Ottis",1947-03-05,6,6+,pisces
+461,"Toppan, Jane",1901-10-29,12,31+,scorpio
+462,"Torrence, Michael",1961-04-15,3,3,aries
+463,"Ture Jr., Joseph",1951-02-07,6,7+,aquarius
+464,"Turner, Chester",1966-11-05,15,16,scorpio
+465,"Urdiales, Andrew",1964-06-04,8,8,gemini
+466,"Vann, Darren Deon",1971-03-21,7,7+,aries
+467,"Vaultz, Horace Van",1955-05-21,3,3+,gemini
+468,"Wade, Joshua",1980-03-13,5,5+,pisces
+469,"Walker, Anthony Guy",1957-07-11,6,6+,cancer
+470,"Wallace, Henry Louis",1965-11-04,11,11,scorpio
+471,"Walls, Frank Athen",1967-10-12,5,5,libra
+472,"Wardrip, Faryion",1959-03-06,5,5,pisces
+473,"Watson, Alexander Wayne",1969-09-24,4,4,
+474,"Watts, Carl Eugene",1953-11-07,22,100,scorpio
+475,"Weldon, Stewart",1977-06-24,3,3,cancer
+476,"Wheeler-Weaver, Khalil",1996-04-20,3,4,taurus
+477,"Whisenhant, Thomas",1947-01-29,4,4+,aquarius
+478,"White, Larry Lamont",1958-03-30,3,3,aries
+479,"White, Nathaniel",1960-07-28,6,6,leo
+480,"Whitten, Hattie",1862-07-24,3,3,leo
+481,"Wickline, William",1952-03-15,3,3+,pisces
+482,"Wilder, Christopher",1945-03-13,8,15,pisces
+483,"Wiley, Nicholas",1962-07-17,3,7,cancer
+484,"Williams, Dorothy",1954-12-12,3,3,sagittarius
+485,"Williams, Kenneth Dewayne",1979-02-23,4,4,pisces
+486,"Williams, Leslie Allen",1953-07-04,4,4,cancer
+487,"Williams, Scott",1963-12-03,3,3,sagittarius
+488,"Williams, Wayne",1958-05-27,2,23,gemini
+489,"Williamson, Thomas Andrew",1831-04-23,4,4,taurus
+490,"Willie, Robert Lee",1958-01-02,3,5,capricorn
+491,"Wimberly, Anthony",1962-10-26,3,3,scorpio
+492,"Winters, Shirley",1958-02-27,2,7,pisces
+493,"Wood, Cathy",1963-08-06,5,6,
+494,"Wood, David Leonard",1957-06-20,6,9,gemini
+495,"Woodfield, Randall",1950-12-26,18,44,capricorn
+496,"Wright, Douglas Franklin",1940-03-25,7,7+,aries
+497,"Wuornos, Aileen",1956-02-29,7,7,pisces
+498,"Yates, Robert Lee",1952-05-27,13,18+,gemini
+499,"Zarinsky, Robert",1940-09-02,2,10,virgo

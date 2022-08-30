@@ -1,0 +1,21 @@
+Data_Collection
+-
+io_data FK >- AWS_DB.clean_data
+
+AWS_DB
+-
+clean_data
+
+I0_Data
+-
+kc_crime FK >- Clean_Data.kc_crime_clean
+killer_bdays FK >- Clean_Data.killer_bdays_clean
+zodiac_signs FK >- Clean_Data.crime_bydate_zodiac
+moon_phases
+
+Clean_Data
+-
+kc_crime_clean FK >- AWS_DB.clean_data
+crime_bydate_zodiac FK >- AWS_DB.clean_data
+killer_bdays_clean FK >- AWS_DB.clean_data
+killer_by_zodiac FK >- AWS_DB.clean_data
