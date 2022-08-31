@@ -1,4 +1,5 @@
 # Horrorscopes
+# <b>SEGMENT 1 README</b>
 We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation.
 
 Website: https://rulamia.github.io/Horrorscopes/
@@ -59,8 +60,8 @@ There are currently four tables anticipated for our presentation:
  
  The KC crime data will be filtered for the zodiac season using the Zodiac moon chart. Texas death row birthdays will be matched to the Sign Date Ranges table.
  
- ![Schema] (https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
- 
+ ![schema_erd.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
+
  ### Status 8/16/22
  The AWS host is created, team is connected, local database is ready for table build testing.
 
@@ -76,17 +77,22 @@ There are currently four tables anticipated for our presentation:
    - Serial killer Zodiac chart
    - Sign date ranges
 
-  Killers test is just what it sounds like, testing for import of data.
+The table killers test is just what it sounds like, originally it was intended to be used solely to test the connection string and database hosting verification. It did help verify hosting but the connection string was another matter. This will be discussed further in the rest of this section. This was one of the hurdles we faced in segment 2. We had mistakenly built our database in the wrong location on the server. This also led to using the wrong address within the connection string.
 
+The tables above are slightly different from the original ERD and are the result of manipulation and cleaning practices. As different aspects of the data were explored, it seemed that it could be narrowed down a bit more. As data conversions were attempted to match the database, some other issues surface. Some data wasn't uniform. As a result the data would not convert into the desired data type. This means data that was thought to be cleaned actually wasn't, partially because the planning phase had not been thorough enough to flush out these potential issues.
+
+As mentioned earlier in this section, the testing table, killers_test had served the purpose of verifying that the database was functioning. However, the connection string had failed. We had mistakenly built the database in the wrong location in our within our database server. This also led to using the wrong address when constructing the connection string.
+
+I had planned for another version of the moon chart table with a Boolean column for “Full_Moon” in place of the “Moon_Type” column currently used. I will try to upload this updated table or perhaps include it in the code for the machine model.
+
+This segment has highlighted the potential problems of that can be born in the planning phase of an ETL. Had the final cleaned data been planned out more thoroughly, the database could have been constructed more easily. As it stands the database should be functional and complete within the next two days. Although this is slightly behind schedule, it doesn't appear to affect the finished project.
   The tables above are slightly different from the original ERD and are the result of manipulation and cleaning practices. As I looked at different aspects of the       data, it seemed that it could be narrowed down a bit more and other edits needed to be done such as data conversions. This caused a challenge, as some of the data     that was thought to be cleaned had to be redressed and I hadn’t been sure of the conversions until I verified with my team.
 
-  I had planned for another version of the moon chart table with a Boolean column for “Full_Moon” in place of the “Moon_Type” column currently used. I will try to       upload this updated table or perhaps include it in the code for the machine model.
-
-  An inner join will be performed between the “kc_crime_v2” table and the full_moons_2009 table, to create a data set that correlates to the full moon.
   
   ### New ERD
   
-  ![Schema] (https://github.com/rulamia/Horrorscopes/blob/main/photos%20for%20group%20work/segment_2_ERD.png)
+  ![segment_2_ERD.png](https://github.com/rulamia/Horrorscopes/blob/main/photos%20for%20group%20work/segment_2_ERD.png)
+
 
 ## Preliminary Data Preprocessing
 
@@ -113,7 +119,7 @@ At this time in the analysis, we have committed to a Kansas City Crime dataset w
  
 The dataset that contains the information we need to answer this question is the Kansas City Crime Data resource. I took a quick look at the data in Pandas to determine which columns contain the information for this problem that can be plugged into an appropriate machine learning model.
  
-![KC Crime DF](https://github.com/rulamia/Horrorscopes/blob/Jessica/Provisional%20Machine%20Learning%20/Resources/KC%20Crime%20DF%20example.png?raw=true)
+![KC%20Crime%20DF%20example.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/KC%20Crime%20DF%20example.png)
 
 It is determined the Description and From Date columns hold the most relevant information to answer our question. Due to Description being a target, or dependent variable, I have concluded a Linear Regression model can be used to answer this question. To make this work effectively, the Description data will need to be transformed into numerical classifcations. With 136 unique possibilities under Description, bucketing the descriptions that are least present in the data into an "other category" will need to be done for efficiency.
 
@@ -121,11 +127,46 @@ It is determined the Description and From Date columns hold the most relevant in
 
 The Texas Death Row dataset contains a csv file that features a date of birth column. This is important to classify the data by each Astrological House's timeframe. 
 
-![Death Row DF](https://github.com/rulamia/Horrorscopes/blob/Jessica/Provisional%20Machine%20Learning%20/Resources/death-row%20df%20example.png?raw=true)
+![death-row%20df%20example.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/death-row%20df%20example.png)
 
 Utilizing the Decision Tree Classifier can group together data with similar attributes; i.e. the dates of birth that fall into each sign's date range.
 
-![Decision Tree](https://github.com/rulamia/Horrorscopes/blob/Jessica/Provisional%20Machine%20Learning%20/Resources/decision%20tree.png?raw=true)
+![decision%20tree.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/decision%20tree.png)
+
+## Testing and Training
+
+### KC Crime Data and Serial Killer Data
+
+Because the KC Crime Dataset contains over 100,000 rows of information, the testing and training will begin with the standard 70% training and testing method. This will be altered throughout the process if needed, but will not be overdone as to skew the results.
+
+I will also begin with the 70/30 training and testing on the Serial Killer Data. Even though this dataset is significantly smaller, this is a popular start for training and testing the data. As we grow more familiar with the data during this process, this plan may change.
+
+## Model Choices, limitations, and benefits
+
+### KC Crime Data
+
+A linear regression model was chosen for this dataset because we are trying to answer a question asking how strong the relationship between two variables is. 
+
+#### Benefits
+
+Linear Regression is a simple model. It is easier to communicate how the model will work and interpret the results. To avoid overfitting, the model can be regularized. New data can be plugged in easily if more questions come up in the analysis.
+
+#### Limitations
+
+Even though the model can be regularized to avoid overfitting, linear regression models are prone to overfitting. With such a large dataset, there is a possibility of outliers that will skew the data.
+
+### Serial Killer Data
+
+The kNN model was chosen for the Serial Killer Data because it is also simple to understand classification model, which will be needed to group the zodiac signs and kill counts.
+
+#### Benefits
+
+As mentioned above, these models are simple and easy to understand. There are no assumptions of the data like a linear regression model would have. This model is ever evolving and adjustable to multi-class problems.
+
+#### Limitations
+
+As great as the kNN is for the questions we are asking, this model can be slow running. Finding the optimal number of neighbors can be challenging. If any data is imbalanced, the model will not perform well. Like linear regression, this algorithm is sensitive to outliers.
+
 
 ## Testing and Training
 
@@ -179,6 +220,17 @@ We are using a website to meet the dashboard criteria. The main page of the webs
 
 # Dashboard
 ## Description of Tools
-CORRINE/LAUREN
+
+For the dashboard (the website) we plan to utilize the following tools:
+- CSS
+- HTML
+- Javascript
+- Tableau
+
 ## Description of interactive element(s)
-CORRINE/LAUREN
+Users will be able to enter their date of birth and the star sign will be returned along with a list of the top 10 most prolific serial killers with the same sign.
+
+## Link to Google Slides
+
+https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit#slide=id.p
+

@@ -1,15 +1,8 @@
 # Segment 2 Group 2 Horrorscopes
-## Presentation/ Slides
-### Description of Data Exploration Phase
-DARCY/LAUREN
-### Description of Analysis Phase
-DARCY/LAUREN
-### List of Technologies/Languages/Tools/Algorithms Used
-DARCY/LAUREN
 
 # Github Repository and Project Overview
 ## Outline of Project
-CORRINE/LAUREN
+![project_flowchart_2.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/project_flowchart_2.png) 
 
 # Machine Learning Model
 
