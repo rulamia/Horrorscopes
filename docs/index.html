@@ -22,7 +22,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="killers.js"></script>
-
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Main')">Main</button>
+        <button class="tablinks" onclick="openTab(event, 'Graphs')">Graphs</button>
+        <button class="tablinks" onclick="openTab(event, 'Info')">Info</button>
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+    </div>
     <div id="container" class="container">
         <div class="col-md-12 text-center card mt-3">
             <h1>Horrorscopes</h1>
@@ -78,7 +83,7 @@
                 return;
         }
         $('#daySelect').children().each(function (index, elem) { elem.remove() })
-        for (var i = 1; i <= days; i++) {
+        for (var i = 0; i <= days; i++) {
             $('#daySelect').append('<option value="' + i + '">' + i + '</option>');
         }
     }
@@ -127,16 +132,13 @@
         $('#container').append('<div id="sign" class="card m-3"><p class="text-center align-middle">Hello ' + sign + '</p></div>')
         $('#container').append('<table id="stats" class="table" style="background: #ffffff"><thead><tr><th scope="col">Name</th><th scope="col">Birth Date</th><th scope="col">Confirmed Kills</th></tr></thead><tbody id="statsBody"></tbody></table>')
         var killersWithSameSign = []
-        for (var i = 0; i < killers.length; i++)
-        {
-            if (killers[i].zodiac_sign && killers[i].zodiac_sign.toUpperCase() === sign.toUpperCase())
-            {
+        for (var i = 0; i < killers.length; i++) {
+            if (killers[i].zodiac_sign && killers[i].zodiac_sign.toUpperCase() === sign.toUpperCase()) {
                 killersWithSameSign.push(killers[i])
             }
         }
-        killersWithSameSign.sort((a,b) => { return b.proven_victims - a.proven_victims})
-        for (var i = 0; i < 10; i++)
-        {
+        killersWithSameSign.sort((a, b) => { return b.proven_victims - a.proven_victims })
+        for (var i = 0; i < 10; i++) {
             $('#statsBody').append("<tr><td>" + killersWithSameSign[i].name + "</td><td>" + killersWithSameSign[i].born + "</td><td>" + killersWithSameSign[i].proven_victims + "</td></tr>")
         }
     }
@@ -161,6 +163,26 @@
         }
         monthChanged(1)
     });
+    function openTab(evt, Name) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(Name).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 </script>
 
 </html>
