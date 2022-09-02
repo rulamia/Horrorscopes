@@ -1,0 +1,231 @@
+CREATE TABLE full_moons_2009 (
+	Moon_Date date,
+	Moon_Type varchar (40),
+	Sign varchar (40),
+	PRIMARY KEY (Moon_Date)
+);
+
+CREATE TABLE kc_crime_v2 (
+	Report_No bigint NOT NULL,
+	From_Date date,
+	Description varchar (40),
+	Firearm_Used_Flag varchar (40),
+	Crime_Type varchar (40)
+);
+
+CREATE TABLE sign_date_ranges (
+	Sign varchar (40),
+	Start_Date date,
+	End_Date date,
+	PRIMARY KEY (Sign)
+);
+
+CREATE TABLE killers_test (
+	Index_Col varchar (40),
+	Name_Last_First varchar (40),
+	Birthday date,
+	PRIMARY KEY (Index_Col)
+);
+
+###### Updated ######
+
+CREATE TABLE killers_test (
+	Name_Last_First varchar (40),
+	Birthday date, 
+	PRIMARY KEY (Name_Last_First)
+);
+
+CREATE TABLE killers_final (
+	last_name_first_name varchar (40),
+	born date,
+	proven_victims int,
+	estimated_victims varchar (40),
+	zodiac_sign
+);
+
+CREATE TABLE boolean_moonchart_2009(
+	moon_date PK DATE,
+	moon_type (1 = True) BIT,
+	sign VARCHAR (40)
+);
+
+###### zodiac signs in descending order by proven victims ######
+
+Each sign will have a CREATE TABLE statement and coupled with an INSERT INTO statment
+which will have a SELECT query nested inside of it. This results in a table of killers 
+organized by zodiac sign in descending order. This will provide a list of the killers 
+with the highest body count for each of the signs.
+
+###### zodiac signs in descending order by proven victims ######
+
+## ARIES
+
+CREATE TABLE aries_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO aries_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'aries'
+	ORDER BY proven_victims DESC;
+
+## Taurus
+
+CREATE TABLE taurus_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO taurus_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'taurus'
+	ORDER BY proven_victims DESC;
+
+## Gemini
+
+CREATE TABLE gemini_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO gemini_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'gemini'
+	ORDER BY proven_victims DESC;
+
+## Cancer 
+
+CREATE TABLE cancer_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO cancer_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'cancer'
+	ORDER BY proven_victims DESC;
+
+## Leo
+
+CREATE TABLE leo_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO leo_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'leo'
+	ORDER BY proven_victims DESC;
+
+## Virgo
+
+CREATE TABLE virgo_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO virgo_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'virgo'
+	ORDER BY proven_victims DESC;
+
+## Libra
+
+CREATE TABLE libra_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO libra_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'libra'
+	ORDER BY proven_victims DESC;
+
+## Scorpio
+
+CREATE TABLE scorpio_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO scorpio_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'scorpio'
+	ORDER BY proven_victims DESC;
+
+## Sagittarius
+
+CREATE TABLE sagittarius_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO sagittarius_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'sagittarius'
+	ORDER BY proven_victims DESC;
+
+## Capricorn
+
+CREATE TABLE capricorn_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO capricorn_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'capricorn'
+	ORDER BY proven_victims DESC;
+
+## Aquarius
+
+CREATE TABLE aquarius_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO aquarius_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'aquarius'
+	ORDER BY proven_victims DESC;
+
+
+## Pisces
+
+CREATE TABLE pisces_kills (
+	last_name_first_name varchar (40),
+	proven_victims int
+);
+
+INSERT INTO pisces_kills
+	(last_name_first_name, proven_victims)
+SELECT last_name_first_name, proven_victims FROM killers_final
+	WHERE zodiac_sign = 'pisces'
+	ORDER BY proven_victims DESC;
+
+## Total kills by sign
+
+CREATE TABLE signs_kill (
+	zodiac_sign varchar (40),
+	total_victims int
+);
+
+
+INSERT INTO signs_kill (proven_victims) 
+select sum(proven_victims) 
+from aries_kills;
+
+INSERT INTO signs_kill (zodiac_sign)
+	VALUES ('aries');

@@ -1,0 +1,31 @@
+full_moons_2009
+-
+Moon_Date date pk
+Moon_Type varchar FK >- kc_crime_v2.Crime_Date
+Sign varchar
+
+kc_crime_v2
+-
+Crime_Date date FK >- sign_date_ranges.Start_Date
+Description varchar
+Firearm_Used_Flag varchar
+Crime_Type varchar
+
+sign_date_ranges
+-
+Sign varchar pk FK >- killers_final.zodiac_sign
+Start_Date date FK >- sign_date_ranges.End_Date
+End_Date date
+
+killers_final
+-
+last_name_first_name varchar
+born date FK >- sign_date_ranges.Start_Date
+proven_victims int
+estimated_victims int
+zodiac_sign
+
+killers_test_only 
+-
+Name_Last_First varchar
+Birthday date
