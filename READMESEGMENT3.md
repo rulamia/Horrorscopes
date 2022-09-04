@@ -94,7 +94,7 @@ All deliverables for Segment 2 are now met.
 
 ### Machine Learning
 
-The questions for our analysis "Does crime happen more during certain astrological seasons?" and "Is there a particular zodiac sign that is more likely to be a murderer??" Ultimately became the subjects for the machine learning process.
+The questions for our analysis "Does crime happen more during certain astrological seasons?" and "Is there a particular zodiac sign that is more likely to be a murderer?" ultimately became the subjects for the machine learning process.
 
 To answer the question of whether or not crime happens more during astrological seasons, the KC Crime Data table from our database was used to compare the zodiac signs to three categories of crime: misconduct, theft, and violent.
 
