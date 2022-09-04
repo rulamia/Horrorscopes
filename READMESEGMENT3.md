@@ -114,16 +114,21 @@ The second chart visualizes the relationship between "Sign" and "Misconduct."
 
 The third chart visualizes the relationship between "Sign" and "Theft."
 
-![KC Crime Sign Theft](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_misconduct.png?raw=true)
+![KC Crime Sign Theft](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_theft.png?raw=true)
 
 The fourth chart visualizes the relationship between "Sign" and "Violent."
+
+![KC Crime Sign Violent](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_violent.png?raw=true)
 
 Killers Logistic Regression: The data preprocessing, feature engineering, and feature selection was much similar on this dataset as the KC Crime Data due to Logistic Regression also being performed on this data. The target variable is again the Zodiac Sign, which was encoded for the model using LabelEncoder. The independent variable, "proven_victims," was already in numerical form. Seaborn was used again to attractively visualize the distribution of the target variable and the relationship between this variable and the "proven_vistims."
 
 The first chart shows a distribution of the target variable renamed during the encoding process as "Signs_N."
 
+![Killers Tart Var](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/killers%20target%20variable.png?raw=true)
+
 The second chart visualizes the relationship between "Signs_N" and "proven_victims."
 
+![Killers Relationship](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/Signs%20vs%20Proven%20Victims.png?raw=true)
 
 #### Training and Testing sets
 
@@ -142,6 +147,14 @@ Changes in model choice: A K Nearest Neighbors model was originally planned for 
 #### Current Accuracy Score
 
 The accuracy scores for both models are very, very low. The KC Crime Data Logistic Regression's score is a disappointing 9%. Even worse, the Killers Logistic Regression is only 7%.
+
+KC Crime Data Logistic Regession Accuracy Score:
+
+![KC Crime Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC%20Crime%20Data%20Accuracy%20Score.png?raw=true)
+
+Killers Crime Data Logistic Regression Accuracy Score:
+
+![Killers Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/killers%20accuracy%20score.png?raw=true)
 
 I believe the decision to use Logistic Regression with the features chosen from each dataset was wrong. Clustering my also produce results that show no correlation between the data and our questions, but I believe they would be a more realistic test for the data.
 
