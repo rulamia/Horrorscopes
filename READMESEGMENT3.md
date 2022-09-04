@@ -106,9 +106,15 @@ KC Crime Data Logistic Regression: The first step in the data preprocessing was 
 
 The first chart shows a distribution of the target variable, "Sign."
 
+![KC Crime Sign Visualization](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_data_datavis1.png?raw=true)
+
 The second chart visualizes the relationship between "Sign" and "Misconduct."
 
+![KC Crime Sign Misconduct](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_misconduct.png?raw=true)
+
 The third chart visualizes the relationship between "Sign" and "Theft."
+
+![KC Crime Sign Theft](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_misconduct.png?raw=true)
 
 The fourth chart visualizes the relationship between "Sign" and "Violent."
 
