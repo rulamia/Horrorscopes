@@ -1,201 +1,137 @@
 # Horrorscopes
+## Presentation Overview
 
-# <b>SEGMENT 1 README</b>
+### Presentation -- Selected Topic and Reason:
+We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation. Data on crime is also widely available.
 
-We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation.
+### Presentation -- Description of Source Data:
+  - List of Famous Serial Killers: Data gathered from Wikipedia scrape. Data contains killers' names, dates of birth, and number of confirmed/potential victims.
+  - KCPD Crime Data for 2009: Found on Kaggle, contains data on the dates of crimes, types of crimes, and if a firearm was used.
+  - 2009 Moon Chart: Made by group members on Excel, this is a simple list of full moons from 2009 and their corresponding astrological sign.
 
-Website: https://rulamia.github.io/Horrorscopes/
+### Presentation -- Questions We Hope To Answer: 
+  - Does crime happen more often during full moons?
+  - What astrological full moon sign (astrological season) has the most crime and what types of crime?
+  - Is there a particular astrological sign associated with more murder? Does date of birth relate to number of victims or number of killers?
+  - Are Pisces men the worst?
 
+### Presentation -- Description of Data Exploration:
+  - Wikipedia Data: When we first scraped Wikipedia for serial killers, we found erroneous entries for articles such as "The Dating Game" and "September 11th Attacks" we needed to clean from our data. We also needed to clean out duplicate entries and entries where the year was the date apprehended rather than the killer's date of birth. Code was then written to assign an astrological sign to each killer by their date of birth and this was exported to a CSV file.
+  - KCPD Crime Data: We removed unnecessary columns, leaving only the report numbers, dates of crimes, descriptions of crimes, and if a firearm was used. We wanted to narrow our focus and classify the crimes, so we created 3 main categories: theft (e.g. robbery, forgery, carjacking), violent (e.g. assault, murder,  arson), and misconduct (e.g. driving under the influence, drug related crimes, loitering). Then using excel we labelled each crime as fit with the description.
 
-# Github Repository and Project Overview
-## Outline of Project
+### Presentation -- Analysis Phase:
+  - Wikipedia Data: 
+       - We put the data into tableau and excel pivot tables to examine any trends between astrological sign and the number of serial killers. We found there were more aquarius killer than other types.
+      ![TableauKillersImage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage1.png)
+      - Then, we analyzed number of victims (confirmed) by Killer's astrological sign. Again, the highest number was from aquarius.
+      ![TableauKillersImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage2.png)
+      - Next, we separated the killers by their birth year. We found that the highest number of serial killers were born between 1946-1964 (with the most being in 1953). This generation definition comes from the Pew Research Center.
+      ![TableauKillersImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage3.png)
+      - Last, we looked at the average number of victims associated with each generation of killer. The average highest number of victims (6.907) came from the silent generation, which were individuals born between 1928-1945.
+      ![TableauKillersImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage4.png)
+  - Full Moon Data:
+      - First, we looked to see which astrological season full moon was associated with the highest number of crime reports for 2009. Virgo full moon (associated with September) had the highest number of reports.
+      ![TableauFullMoonIMage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonIMage1.png)
+      - Then, the reports were separated by crime type to see which astrological season had the most for each crime type. Crimes categorized as "misconduct" were most often commited during the Taurus full moon, theft was commited most during the Aries full moon, and violent crimes occured most often during the Gemini moon.
+      ![TableauFullMoonImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage2.png)
+      - Next, we looked to see which full moon sign had the most reports associated with firearms. Pisces full moon had the most firearms.
+      ![TableauFullMoonImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage3.png)
+      - Then to better see if there were spikes during full moons, all of the crimes were placed on a line chart with the X-axis being the date the crime was commited and the Y axis being the number of reports. The graph could be filtered to show each month individually. In general, there did not appear to be a major uptick in reported crimes on full moons.
+      ![TableauFullMoonImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage4.png)
+      - Last, the same line chart was created to see if more firearms were used during full moons. Again, in general there did not seem to be a major increase.
+      ![TableauFullMoonImage5.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage5.png)
+
+### Presentation -- Technologies, languages, tools, and algorithms used:
+  - Google Colab/ Jupyter Notebook
+  - Tableau
+  - Microsoft Office Programs such as Word and Excel
+  - Mito 
+  - Adobe Illustrator 
+  - Python
+  - SQL and Postgres
+  - Pandas
+  - Javascript
+  - Bootstrap
+  - AWS
+
+## Github 
+### Github -- Outline of Project:
 ![project_flowchart_2.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/project_flowchart_2.png) 
 
-### Data Sets
-  - KCPD Crime Data Set: A data set from 2009 containing every crime recorded in Kansas City, Missouri during that year. It distinguishes on type of crime and the time and date the crime was committed. This data set has over 100,000 rows.
-  - Texas Death Row Data Set: A dataset depicting the name, date of birth, and type of crime committed by Texas Death Row inmates. This is our smallest data set, coming in at just over 200 rows.
-  - Wikipedia Serial Killer Data Set: a data set directly scraped from Wikipedia containing the name and data birth of many famous serial killers.
-  
-### Question We Hope to Answer
-  - Does crime happen more during certain astrological seasons?
-  - Is there a particular zodiac sign that is more likely to be a murderer?
-  - Are pisces men the worst?
+### Github -- Link to Draft Presentation Slides:
+https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
 
-# Group 2 Communication Protocol
-## Participants
-* Angelique Walker
-* Corrine Moore
-* Darcy Barnett
-* Jessica Stearns
-* Lauren Debes
+## Machine Learning Model
+### Machine Learning Model -- Questions to Be Answered:
+The questions for our analysis "Does crime happen more during certain astrological seasons?" and "Is there a particular zodiac sign that is more likely to be a murderer?" ultimately became the subjects for the machine learning process. To answer the question of whether or not crime happens more during astrological seasons, the KC Crime Data table from our database was used to compare the zodiac signs to three categories of crime: misconduct, theft, and violent. To find out if there is a zodiac sign more likely to be a murder, the kill counts vs zodiac signs were modeled.
 
-## Methodology
-* Slack
-* Zoom
-* Google Documents
+### Machine Learning Model -- Description of Data Processing, Feature Engineering, and Selection:
+KC Crime Data Logistic Regression: The first step in the data preprocessing was to examine the data pulled from the "full_moon_vs_crime_date" table from our database. It was determined there were 4,152 object types in the "Sign" and "Crime_Type" columns, the chosen features for the machine learning process. "Signs" was chosen to act as the target variable, and "Crime_Type" the independent variable. Deeming the "Crime_Moon_Type column unnecessary for this model, the next step taken was to drop that column, leaving two columns with rows containing objects. The "Sign" column was encoded using LabelEncoder, which changed the object of each row into a number from 0 to 11. The "Crime_Type" columns was encoded using OneHotEncoder. A new DataFrame was created with three new columns for the OneHotEncode crime types, and the "Crime_Type" column was dropped. I then renamed the three new columns based on their crime types: Misconduct, Theft, and Violent. I then created visuals using Seaborn, a data visualization library based on matplotlib.
 
-## Summary
-Group 2 has committed to meeting multiple times a week on Zoom outside of designated class time to collaborate and delegate specific tasks amongst our group members. When not in a meeting, we communicate via Slack to update each other on the status of our specific tasks as well as coordinate schedules. While meeting, we make contributions to a shared Google Document that keeps a running log of each meeting, what is discussed, what is delegated, and what has yet to be delegated. This document is also referenced outside of class to remind each group member of what everyone should be working on.
+The first chart shows a distribution of the target variable, "Sign."
+![KC Crime Sign Visualization](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_data_datavis1.png?raw=true)
 
-Group 2 is dedicated to maintaining professionalism and upholding a deep respect for every other group member's time, input, and experience.
+The second chart visualizes the relationship between "Sign" and "Misconduct."
+![KC Crime Sign Misconduct](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_misconduct.png?raw=true)
 
-## Segment One: Database Mock Up
-### Overview: Analyzing crime and the Zodiac
-Can Kansas City crime data filtered by date and Zodiac season tell us which season is the most criminal?
-Based on Texas death row data, which sign is the most dangerous?
+The third chart visualizes the relationship between "Sign" and "Theft."
+![KC Crime Sign Theft](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_theft.png?raw=true)
 
-### Technology
- - Jupyter Notebook
- - PostgreSQL
- - Amazon Web Services
+The fourth chart visualizes the relationship between "Sign" and "Violent."
+![KC Crime Sign Violent](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/kc_crime_signs_violent.png?raw=true)
 
-For the purposes of our research we are using Jupyter Notebook to preprocess our data and convert it into csv files. The prepared data will be hosted on an AWS database 
-instance and accessed locally using a PostgreSQL database.
+Killers Logistic Regression: The data preprocessing, feature engineering, and feature selection was much similar on this dataset as the KC Crime Data due to Logistic Regression also being performed on this data. The target variable is again the Zodiac Sign, which was encoded for the model using LabelEncoder. The independent variable, "proven_victims," was already in numerical form. Seaborn was used again to attractively visualize the distribution of the target variable and the relationship between this variable and the "proven_vistims."
 
-### Schema and ERD
-There are currently four tables anticipated for our presentation: 
- - KC crime data 2009
- - Zodiac moon chart 2009
- - Texas death row birthdays
- - Sign Date Ranges
+The first chart shows a distribution of the target variable renamed during the encoding process as "Signs_N."
+![Killers Tart Var](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/killers%20target%20variable.png?raw=true)
+
+The second chart visualizes the relationship between "Signs_N" and "proven_victims."
+![Killers Relationship](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/Signs%20vs%20Proven%20Victims.png?raw=true)
+
+### Machine Learning Model -- How Data was Split Into Training and Testing Sets:
+The training and testing sets for both the KC Crime Data and Killers datasets was a standard 80% training set and 20% testing set. 
+
+### Machine Learning Model -- Explanation of Model Choices:
+Due to the presence of categorical data and the desire for simplicity, I chose logistic regression models for both Datasets.
+
+  - Limitations: Both datasets are limited using the Logistic Regression due to the model's lack of the ability to obtain complex relationships between the target and independent variables. Both datasets may have benefited from clustering models, like originally planned, instead of trying to force the data into a linear decision because it is a simpler model.
+  - Benefits: Logistic Regression was chosen for both datasets because it was thought to have been easier to implement, interpret, and efficient to train. It also would, and may still be, simple to plug in additional tables created during the DataBase phase of this analysis.
+  - Changes in model choice: A K Nearest Neighbors model was originally planned for the Serial Killer Dataset. For efficiency purposes, this was changed to Logistic Regression. Linear Regression was originally and incorrectly chosen for the KC Crime Dataset. After realizing the error in choosing Linear Regression for categorical data, it was altered to Logistic Regression.
+
+### Machine Learning Model -- Description of Model Training:
+
+### Machine Learning Model -- Description of Current Accuracy Score:
+The accuracy scores for both models are very, very low. The KC Crime Data Logistic Regression's score is a disappointing 9%. Even worse, the Killers Logistic Regression is only 7%.
+
+KC Crime Data Logistic Regession Accuracy Score:
+![KC Crime Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC%20Crime%20Data%20Accuracy%20Score.png?raw=true)
+
+Killers Crime Data Logistic Regression Accuracy Score:
+![Killers Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/killers%20accuracy%20score.png?raw=true)
+
+I believe the decision to use Logistic Regression with the features chosen from each dataset was wrong. Clustering my also produce results that show no correlation between the data and our questions, but I believe they would be a more realistic test for the data.
+
+### Machine Learning Model -- How Does it Answer the Questions?
+Currently, the accuracy score is so low it simply answers "no" to our questions about whether more crime happens during certain astrological seasons and if there is a particular zodiac sign more likely to commit murder. This makes logical sense.
+
+## Database
+
+### Database -- Overview:
+For the purposes of our research we are using Jupyter Notebook to preprocess our data and convert it into csv files. The prepared data will be hosted on an AWS database instance and accessed locally using a PostgreSQL database.
+
+### Database -- Schema and ERD:
+There are currently four main tables anticipated for our presentation:  
+- KC crime data 2009
+- Zodiac moon chart 2009
+- Sign Date Ranges
  
- The KC crime data will be filtered for the zodiac season using the Zodiac moon chart. Texas death row birthdays will be matched to the Sign Date Ranges table.
- 
- ![schema_erd.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/photos%20for%20group%20work/schema_erd.png)
- 
- ### Status 8/16/22
- The AWS host is created, team is connected, local database is ready for table build testing.
+The KC crime data will be filtered for the zodiac season using the Zodiac moon chart.
+![ERDsegment3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/ERDsegment3.png)
 
-
-  ##### End Segment One.
-
-  # <b>Segement Two: Database Testing and Importing of Data</b>
-  ### Creating Tables
-  Tables for our incoming data are built in this phase of the work. 
-   - Killers test
-   - KC crime data 2009
-   - Zodiac moon chart 2009
-   - Serial killer Zodiac chart
-   - Sign date ranges
-
-The table killers test is just what it sounds like, originally it was intended to be used solely to test the connection string and database hosting verification. It did help verify hosting but the connection string was another matter. This will be discussed further in the rest of this section. This was one of the hurdles we faced in segment 2. We had mistakenly built our database in the wrong location on the server. This also led to using the wrong address within the connection string.
-
-The tables above are slightly different from the original ERD and are the result of manipulation and cleaning practices. As different aspects of the data were explored, it seemed that it could be narrowed down a bit more. As data conversions were attempted to match the database, some other issues surface. Some data wasn't uniform. As a result the data would not convert into the desired data type. This means data that was thought to be cleaned actually wasn't, partially because the planning phase had not been thorough enough to flush out these potential issues.
-
-As mentioned earlier in this section, the testing table, killers_test had served the purpose of verifying that the database was functioning. However, the connection string had failed. We had mistakenly built the database in the wrong location in our within our database server. This also led to using the wrong address when constructing the connection string.
-
-I had planned for another version of the moon chart table with a Boolean column for “Full_Moon” in place of the “Moon_Type” column currently used. I will try to upload this updated table or perhaps include it in the code for the machine model.
-
-This segment has highlighted the potential problems of that can be born in the planning phase of an ETL. Had the final cleaned data been planned out more thoroughly, the database could have been constructed more easily. As it stands the database should be functional and complete within the next two days. Although this is slightly behind schedule, it doesn't appear to affect the finished project.
-  The tables above are slightly different from the original ERD and are the result of manipulation and cleaning practices. As I looked at different aspects of the       data, it seemed that it could be narrowed down a bit more and other edits needed to be done such as data conversions. This caused a challenge, as some of the data     that was thought to be cleaned had to be redressed and I hadn’t been sure of the conversions until I verified with my team.
-
-  
-  ### New ERD
-  
-  ![segment_2_ERD.png](https://github.com/rulamia/Horrorscopes/blob/main/photos%20for%20group%20work/segment_2_ERD.png)
-
-## Preliminary Data Preprocessing
-
-### KC Crime Data
-
-For a successful linear regression model to determine if there is any correlation, careful preprocessing will need to take place. Our dependent variable, Description of the type of crime committed, will need to transformed from categorical data to numerical data. To make this possible, one-hot encoding will be utilized to transform the features into a dummy set. This dataset is quite large, and the Description feature contains several different types of crimes committed. To run a smooth linear regression, the types of crime will be bucketed into smaller categories, including an “other” category for the least common occurrences. 
-
-Any missing data will need to be addressed as well. The scikit learn imputer will be used to transform any null values into the mean value. Date values will need to be cleaned up and in a consistent format for the machine to read them.
-
-### Serial Killer Data
-
-After further analyzing the decided upon datasets, we made the decision to drop the Texas Death Row csv. Instead, we scraped wikipedia for Serial Killer data. This is more relevant to our initial questions “Is there a particular zodiac sign that is more likely to be a murderer?” And “Are Pisces men the worst?” Clustering will still be the appropriate model for machine learning, but it was decided kNN (k Nearest Neighbors) Clustering will be more appropriate. 
-
-K Nearest Neighbors is a supervised learning algorithm used for classification. This model will group the serial killers together by zodiac sign and kill count to determine if our hypothesis is correct. The most important features of this dataset are the date of birth and kill count. Irrelevant columns will be dropped. Buckets separating the dates of birth within the range of each astrological sign will need to be created. Like the KC Crime Data, we will need to clean up the date formats before bucketing.
-
-## Provisional Machine Learning Models
-
-At this time in the analysis, we have committed to a Kansas City Crime dataset with over 300,000 rows and a Texas Death Row dataset, specifically a CSV that includes the dates of birth with 238 rows. Ideally, we will be using Machine Learning to answer the following questions:
-  - Does crime happen more during certain astrological seasons?
-  - Is there a particular zodiac sign that is more likely to be a murderer?
-  - Are pisces men the worst?
-  
- ### Using Linear Regression to answer, "Does crime happen more during certain astrological seasons?"
- 
-The dataset that contains the information we need to answer this question is the Kansas City Crime Data resource. I took a quick look at the data in Pandas to determine which columns contain the information for this problem that can be plugged into an appropriate machine learning model.
- 
-![KC%20Crime%20DF%20example.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/KC%20Crime%20DF%20example.png)
-
-It is determined the Description and From Date columns hold the most relevant information to answer our question. Due to Description being a target, or dependent variable, I have concluded a Linear Regression model can be used to answer this question. To make this work effectively, the Description data will need to be transformed into numerical classifcations. With 136 unique possibilities under Description, bucketing the descriptions that are least present in the data into an "other category" will need to be done for efficiency.
-
-### Using Decision Trees and Clustering to answer, "Is there a particular zodiac sign that is more likely to be a murderer?" and cheekily, "Are pisces men the worst?"
-
-The Texas Death Row dataset contains a csv file that features a date of birth column. This is important to classify the data by each Astrological House's timeframe. 
-
-![death-row%20df%20example.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/death-row%20df%20example.png)
-
-Utilizing the Decision Tree Classifier can group together data with similar attributes; i.e. the dates of birth that fall into each sign's date range.
-
-![decision%20tree.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Provisional%20Machine%20Learning/Resources/decision%20tree.png)
-
-## Testing and Training
-
-### KC Crime Data and Serial Killer Data
-
-Because the KC Crime Dataset contains over 100,000 rows of information, the testing and training will begin with the standard 70% training and testing method. This will be altered throughout the process if needed, but will not be overdone as to skew the results.
-
-I will also begin with the 70/30 training and testing on the Serial Killer Data. Even though this dataset is significantly smaller, this is a popular start for training and testing the data. As we grow more familiar with the data during this process, this plan may change.
-
-## Model Choices, limitations, and benefits
-
-### KC Crime Data
-
-A linear regression model was chosen for this dataset because we are trying to answer a question asking how strong the relationship between two variables is. 
-
-#### Benefits
-
-Linear Regression is a simple model. It is easier to communicate how the model will work and interpret the results. To avoid overfitting, the model can be regularized. New data can be plugged in easily if more questions come up in the analysis.
-
-#### Limitations
-
-Even though the model can be regularized to avoid overfitting, linear regression models are prone to overfitting. With such a large dataset, there is a possibility of outliers that will skew the data.
-
-### Serial Killer Data
-
-The kNN model was chosen for the Serial Killer Data because it is also simple to understand classification model, which will be needed to group the zodiac signs and kill counts.
-
-#### Benefits
-
-As mentioned above, these models are simple and easy to understand. There are no assumptions of the data like a linear regression model would have. This model is ever evolving and adjustable to multi-class problems.
-
-#### Limitations
-
-As great as the kNN is for the questions we are asking, this model can be slow running. Finding the optimal number of neighbors can be challenging. If any data is imbalanced, the model will not perform well. Like linear regression, this algorithm is sensitive to outliers.
-
-### Summary
-
-While confident our questions can be answered using Linear Regression and Decision Trees, I am not confident the Texas Death Row data has enough information to gather the results we are looking for with only 238 lines. I believe a larger dataset with more data will be needed.
-
-## Website Creation
-
-#### Website Whiteboard
-![whiteboard](./Resource/whiteboard.jpg)
-
-We are using a website to meet the dashboard criteria. The main page of the website has been completed for the week 2 deliverable. The drawn out plan for the website can be seen above as a whiteboarded mock up. The finished website will have multiple tabs to show off the project. The tabs will be as follows: 
-- Graphs (included maps)
-- Machine Learning (The graphs created from the machine learning)
-- About us (The readme and a little bit about each team member)
-- Info (Descriptions of each star sign and phases of the moon)
+### Database -- Inner Join Update:
+We were able to do an inner join between the Full_Moon_2009 Table and the KC Crime Data Table after fixing the date column formatting for both tables and converting the data type to datetime.
+All deliverables for Segment 2 are now met.
 
 ## Dashboard
-### Description of Tools
-For the dashboard (the website) we plan to utilize the following tools:
-- CSS
-- HTML
-- Javascript
-- Tableau
-
-
-### Description of interactive element(s)
-Users will be able to enter their date of birth and the star sign will be returned along with a list of the top 10 most prolific serial killers with the same sign.
-
-
-### Google Slides
-Link to google slides https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
-
-main
+### Link to Website/Dashboard:
+https://rulamia.github.io/Horrorscopes/
