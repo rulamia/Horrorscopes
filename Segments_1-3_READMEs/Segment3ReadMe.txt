@@ -134,4 +134,3 @@ All deliverables for Segment 2 are now met.
 
 ## Dashboard
 ### Link to Website/Dashboard:
-https://rulamia.github.io/Horrorscopes/
