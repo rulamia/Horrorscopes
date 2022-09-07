@@ -216,7 +216,7 @@ We are using a website to meet the dashboard criteria. The main page of the webs
 - Graphs (included maps)
 - Machine Learning (The graphs created from the machine learning)
 - About us (The readme and a little bit about each team member)
-- Info (Descriptions of each star sign and phases of the moon)
+- Info (Descriptions of each star sign)
 
 # Dashboard
 ## Description of Tools
