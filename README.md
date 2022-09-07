@@ -119,6 +119,7 @@ Currently, the accuracy score is so low it simply answers "no" to our questions 
 ### Database -- Overview:
 For the purposes of our research we are using Jupyter Notebook to preprocess our data and convert it into csv files. The prepared data will be hosted on an AWS database instance and accessed locally using a PostgreSQL database.
 
+
 ### Database -- Schema and ERD:
 There are currently four main tables anticipated for our presentation:  
 - KC crime data 2009
@@ -127,6 +128,7 @@ There are currently four main tables anticipated for our presentation:
  
 The KC crime data will be filtered for the zodiac season using the Zodiac moon chart.
 ![ERDsegment3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/ERDsegment3.png)
+
 
 ### Database -- Inner Join Update:
 We were able to do an inner join between the Full_Moon_2009 Table and the KC Crime Data Table after fixing the date column formatting for both tables and converting the data type to datetime.
