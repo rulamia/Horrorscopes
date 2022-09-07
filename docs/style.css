@@ -8,10 +8,30 @@ body {
     font-size: 1rem;
 }
 
-p {
+h2 {
     font-family: "Monaco", monospace;
     font-size: 2rem; 
     color: #391e50;
+}
+
+p {
+    font-family: "Monaco", monospace;
+    font-size: 1.25rem; 
+    color: #391e50;
+}
+
+small {
+    font-family: "Monaco", monospace;
+    font-size: 0.8rem; 
+    color: #391e50;
+    text-align: left;
+}
+
+ul {
+    font-family: "Monaco", monospace;
+    font-size: 1rem; 
+    color: #391e50;
+    text-align: left;
 }
 
 table {
