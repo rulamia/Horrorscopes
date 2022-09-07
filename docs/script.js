@@ -103,6 +103,15 @@ $(document).ready(function () {
         $('#monthSelect').append('<option value=' + months[index].value + '>' + months[index].name + '</option>');
     }
     monthChanged(1)
+
+    var divElement = document.getElementById('viz1662341474918'); 
+    var vizElement = divElement.getElementsByTagName('object')[0]; 
+    vizElement.style.width = '80%'; 
+    vizElement.style.height = '1000px'; 
+    var scriptElement = document.createElement('script'); 
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
     openTab(document.getElementsByClassName("tabcontent")[0], 'Main')
 });
 function openTab(evt, Name) {

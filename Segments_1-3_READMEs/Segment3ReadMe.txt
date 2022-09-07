@@ -5,60 +5,60 @@
 We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have Any Effect on Crime?" This topic was selected as many share a fascination with crimes and the reasons why they are committed. In addition, many have a deep interest in astrology and the hypothesis that the stars and planets may have an effect on how we lead our lives. We want to explore whether or not there could be any possible connection between these two fascinations, or if it is a case of correlation =/= causation. Data on crime is also widely available.
 
 ### Presentation -- Description of Source Data:
-  - List of Famous Serial Killers: Data gathered from Wikipedia scrape. Data contains killers' names, dates of birth, and number of confirmed/potential victims.
-  - KCPD Crime Data for 2009: Found on Kaggle, contains data on the dates of crimes, types of crimes, and if a firearm was used.
-  - 2009 Moon Chart: Made by group members on Excel, this is a simple list of full moons from 2009 and their corresponding astrological sign.
+    - List of Famous Serial Killers: Data gathered from Wikipedia scrape. Data contains killers' names, dates of birth, and number of confirmed/potential victims.
+    - KCPD Crime Data for 2009: Found on Kaggle, contains data on the dates of crimes, types of crimes, and if a firearm was used.
+    - 2009 Moon Chart: Made by group members on Excel, this is a simple list of full moons from 2009 and their corresponding astrological sign.
 
 ### Presentation -- Questions We Hope To Answer: 
-  - Does crime happen more often during full moons?
-  - What astrological full moon sign (astrological season) has the most crime and what types of crime?
-  - Is there a particular astrological sign associated with more murder? Does date of birth relate to number of victims or number of killers?
-  - Are Pisces men the worst?
+    - Does crime happen more often during full moons?
+    - What astrological full moon sign (astrological season) has the most crime and what types of crime?
+    - Is there a particular astrological sign associated with more murder? Does date of birth relate to number of victims or number of killers?
+    - Are Pisces men the worst?
 
 ### Presentation -- Description of Data Exploration:
-  - Wikipedia Data: When we first scraped Wikipedia for serial killers, we found erroneous entries for articles such as "The Dating Game" and "September 11th Attacks" we needed to clean from our data. We also needed to clean out duplicate entries and entries where the year was the date apprehended rather than the killer's date of birth. Code was then written to assign an astrological sign to each killer by their date of birth and this was exported to a CSV file.
-  - KCPD Crime Data: We removed unnecessary columns, leaving only the report numbers, dates of crimes, descriptions of crimes, and if a firearm was used. We wanted to narrow our focus and classify the crimes, so we created 3 main categories: theft (e.g. robbery, forgery, carjacking), violent (e.g. assault, murder,  arson), and misconduct (e.g. driving under the influence, drug related crimes, loitering). Then using excel we labelled each crime as fit with the description.
+    - Wikipedia Data: When we first scraped Wikipedia for serial killers, we found erroneous entries for articles such as "The Dating Game" and "September 11th Attacks" we needed to clean from our data. We also needed to clean out duplicate entries and entries where the year was the date apprehended rather than the killer's date of birth. Code was then written to assign an astrological sign to each killer by their date of birth and this was exported to a CSV file.
+    - KCPD Crime Data: We removed unnecessary columns, leaving only the report numbers, dates of crimes, descriptions of crimes, and if a firearm was used. We wanted to narrow our focus and classify the crimes, so we created 3 main categories: theft (e.g. robbery, forgery, carjacking), violent (e.g. assault, murder,  arson), and misconduct (e.g. driving under the influence, drug related crimes, loitering). Then using excel we labelled each crime as fit with the description.
 
 ### Presentation -- Analysis Phase:
-  - Wikipedia Data: 
-       - We put the data into tableau and excel pivot tables to examine any trends between astrological sign and the number of serial killers. We found there were more aquarius killer than other types.
-      ![TableauKillersImage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage1.png)
-      - Then, we analyzed number of victims (confirmed) by Killer's astrological sign. Again, the highest number was from aquarius.
-      ![TableauKillersImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage2.png)
-      - Next, we separated the killers by their birth year. We found that the highest number of serial killers were born between 1946-1964 (with the most being in 1953). This generation definition comes from the Pew Research Center.
-      ![TableauKillersImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage3.png)
-      - Last, we looked at the average number of victims associated with each generation of killer. The average highest number of victims (6.907) came from the silent generation, which were individuals born between 1928-1945.
-      ![TableauKillersImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage4.png)
-  - Full Moon Data:
-      - First, we looked to see which astrological season full moon was associated with the highest number of crime reports for 2009. Virgo full moon (associated with September) had the highest number of reports.
-      ![TableauFullMoonIMage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonIMage1.png)
-      - Then, the reports were separated by crime type to see which astrological season had the most for each crime type. Crimes categorized as "misconduct" were most often commited during the Taurus full moon, theft was commited most during the Aries full moon, and violent crimes occured most often during the Gemini moon.
-      ![TableauFullMoonImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage2.png)
-      - Next, we looked to see which full moon sign had the most reports associated with firearms. Pisces full moon had the most firearms.
-      ![TableauFullMoonImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage3.png)
-      - Then to better see if there were spikes during full moons, all of the crimes were placed on a line chart with the X-axis being the date the crime was commited and the Y axis being the number of reports. The graph could be filtered to show each month individually. In general, there did not appear to be a major uptick in reported crimes on full moons.
-      ![TableauFullMoonImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage4.png)
-      - Last, the same line chart was created to see if more firearms were used during full moons. Again, in general there did not seem to be a major increase.
-      ![TableauFullMoonImage5.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage5.png)
+    - Wikipedia Data: 
+        - We put the data into tableau and excel pivot tables to examine any trends between astrological sign and the number of serial killers. We found there were more aquarius killer than other types.
+        ![TableauKillersImage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage1.png)
+        - Then, we analyzed number of victims (confirmed) by Killer's astrological sign. Again, the highest number was from aquarius.
+        ![TableauKillersImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage2.png)
+        - Next, we separated the killers by their birth year. We found that the highest number of serial killers were born between 1946-1964 (with the most being in 1953). This generation definition comes from the Pew Research Center.
+        ![TableauKillersImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage3.png)
+        - Last, we looked at the average number of victims associated with each generation of killer. The average highest number of victims (6.907) came from the silent generation, which were individuals born between 1928-1945.
+        ![TableauKillersImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauKillersImage4.png)
+    - Full Moon Data:
+        - First, we looked to see which astrological season full moon was associated with the highest number of crime reports for 2009. Virgo full moon (associated with September) had the highest number of reports.
+        ![TableauFullMoonIMage1.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonIMage1.png)
+        - Then, the reports were separated by crime type to see which astrological season had the most for each crime type. Crimes categorized as "misconduct" were most often commited during the Taurus full moon, theft was commited most during the Aries full moon, and violent crimes occured most often during the Gemini moon.
+        ![TableauFullMoonImage2.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage2.png)
+        - Next, we looked to see which full moon sign had the most reports associated with firearms. Pisces full moon had the most firearms.
+        ![TableauFullMoonImage3.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage3.png)
+        - Then to better see if there were spikes during full moons, all of the crimes were placed on a line chart with the X-axis being the date the crime was commited and the Y axis being the number of reports. The graph could be filtered to show each month individually. In general, there did not appear to be a major uptick in reported crimes on full moons.
+        ![TableauFullMoonImage4.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage4.png)
+        - Last, the same line chart was created to see if more firearms were used during full moons. Again, in general there did not seem to be a major increase.
+        ![TableauFullMoonImage5.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Lauren/Resource/TableauFullMoonImage5.png)
 
-### Presentation -- Technologies, languages, tools, and algorithms used:
-  - Google Colab/ Jupyter Notebook
-  - Tableau
-  - Microsoft Office Programs such as Word and Excel
-  - Mito 
-  - Adobe Illustrator 
-  - Python
-  - SQL and Postgres
-  - Pandas
-  - Javascript
-  - Bootstrap
-  - AWS
+### Presentation -- Technologies, languages, tools, and algorithms used.
+    - Google Colab/ Jupyter Notebook
+    - Tableau
+    - Microsoft Office Programs such as Word and Excel
+    - Mito 
+    - Adobe Illustrator 
+    - Python
+    - SQL and Postgres
+    - Pandas
+    - Javascript
+    - Bootstrap
+    - AWS
 
 ## Github 
-### Github -- Outline of Project:
+### Outline of Project
 ![project_flowchart_2.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/project_flowchart_2.png) 
 
-### Github -- Link to Draft Presentation Slides:
+### Link to Draft Presentation Slides:
 https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
 
 ## Machine Learning Model
@@ -94,9 +94,9 @@ The training and testing sets for both the KC Crime Data and Killers datasets wa
 ### Machine Learning Model -- Explanation of Model Choices:
 Due to the presence of categorical data and the desire for simplicity, I chose logistic regression models for both Datasets.
 
-  - Limitations: Both datasets are limited using the Logistic Regression due to the model's lack of the ability to obtain complex relationships between the target and independent variables. Both datasets may have benefited from clustering models, like originally planned, instead of trying to force the data into a linear decision because it is a simpler model.
-  - Benefits: Logistic Regression was chosen for both datasets because it was thought to have been easier to implement, interpret, and efficient to train. It also would, and may still be, simple to plug in additional tables created during the DataBase phase of this analysis.
-  - Changes in model choice: A K Nearest Neighbors model was originally planned for the Serial Killer Dataset. For efficiency purposes, this was changed to Logistic Regression. Linear Regression was originally and incorrectly chosen for the KC Crime Dataset. After realizing the error in choosing Linear Regression for categorical data, it was altered to Logistic Regression.
+    - Limitations: Both datasets are limited using the Logistic Regression due to the model's lack of the ability to obtain complex relationships between the target and independent variables. Both datasets may have benefited from clustering models, like originally planned, instead of trying to force the data into a linear decision because it is a simpler model.
+    - Benefits: Logistic Regression was chosen for both datasets because it was thought to have been easier to implement, interpret, and efficient to train. It also would, and may still be, simple to plug in additional tables created during the DataBase phase of this analysis.
+    - Changes in model choice: A K Nearest Neighbors model was originally planned for the Serial Killer Dataset. For efficiency purposes, this was changed to Logistic Regression. Linear Regression was originally and incorrectly chosen for the KC Crime Dataset. After realizing the error in choosing Linear Regression for categorical data, it was altered to Logistic Regression.
 
 ### Machine Learning Model -- Description of Model Training:
 
@@ -134,4 +134,3 @@ All deliverables for Segment 2 are now met.
 
 ## Dashboard
 ### Link to Website/Dashboard:
-https://rulamia.github.io/Horrorscopes/
