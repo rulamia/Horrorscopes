@@ -54,6 +54,24 @@ We selected the topic of "Horrorscopes: Does Astrological Season or Sign Have An
   - Bootstrap
   - AWS
 
+### Presentation -- Results of Analysis:
+  - Question: Does crime happen more often during full moons?
+  
+    Answer: The final results from the Logistic Regression Model on the KC Crime Dataset included an Accuracy Score of 10%. This percentage was raised by 1% after standardizing the data with StandardScaler from sklearn, altering the train-test split to 70/30, and changing the Random State to 1 instead of 42. After reviewing the datasets provided, it was noted the data was organized in a way that could be causing the low accuracy. We chose to shuffle the data in the train_test_split phase, but this did not alter the results at all. The results in the Classification Report for the KC Crime Dataset show this Logistic Regression model can not accurately predict the answers we were looking for on this dataset. The precision, recall, and f1 scores are all very low. This makes logical sense in addition, that crime does not occur more during full moons.
+    
+  - Question: What astrological full moon sign (astrological season) has the most crime and what types of crime?
+  
+    Answer: Virgo season Full Moon in 2009 had the most reports in Kansas City. 
+  
+  - Question: Is there a particular astrological sign associated with more murder? Does date of birth relate to number of victims or number of killers?
+  
+  Answer: Following the results showing a slight improvement of accuracy on the KC Crime Dataset, we implemented similar updates on the Serial Killer dataset. After standardizing the data with StandardScaler and altering the train-test split to 70/30, the accuracy score is now 11%. Just like the other dataset, shuffling the data during train_test_split did not change the outcomes. As seen in Classification Report, the precision scores are all 14% or below - showing the amount of false positives is high. The recall scores are also quite low, meaning the proportion of actual positives correctly classified are low. The F1 score, a combination of the precision and recall scores, is also low. These results show the Logistic Regression model can not accurately answer our questions. However, likely no model could sense it likely makes logical sense that certain astrological signs are not associated with a higher likelihood of murder.
+  
+  - Question: Are Pisces men the worst?
+
+### Presentation -- What the team would have done differently:
+If this analysis were to continue, the datasets should be re-analyzed to make sure they are not set up in any sort of order that can skew the machine learning models. Attempting a cluster model like K Nearest Neighbors may show more accurate results on both datasets. Changing the features or introducing new data to the datasets to use as new features could also change the outcome of the Machine Learning performed during this project. For crime it would also be better to include more data, a wider range of cities, and over more years.
+
 ## Github 
 ### Github -- Outline of Project:
 ![project_flowchart_2.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/project_flowchart_2.png) 
