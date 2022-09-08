@@ -60,56 +60,114 @@
         </div>
     </div>
     <div id="Graphs" class="tabcontent">
-        <div class='tableauPlaceholder' id='viz1662341474918' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt='Serial Killers vs Zodiac Sign '
-                        src='https://public.tableau.com/static/images/Se/SerialKillersvsZodiacSign/SerialKillersvsZodiacSign/1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
+        <div class='tableauPlaceholder' id='viz1662595253401' style='position: relative'><noscript><a href='#'><img
+                        alt='Horrorscopes Charts '
+                        src='https://public.tableau.com/static/images//SerialKillersvsZodiacSign/HorrorscopesCharts/1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
-                <param name='name' value='SerialKillersvsZodiacSign/SerialKillersvsZodiacSign' />
+                <param name='name' value='SerialKillersvsZodiacSign/HorrorscopesCharts' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
                 <param name='static_image'
-                    value='https://public.tableau.com/static/images/Se/SerialKillersvsZodiacSign/SerialKillersvsZodiacSign/1.png' />
+                    value='https://public.tableau.com/static/images//SerialKillersvsZodiacSign/HorrorscopesCharts/1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
                 <param name='display_overlay' value='yes' />
                 <param name='display_count' value='yes' />
                 <param name='language' value='en-US' />
-            </object>
-        </div>
+                <param name='filter' value='publish=yes' />
+            </object></div>
     </div>
     <div id="Machine Learning" class="tabcontent">
         <div id="container" class="container">
             <div class="row">
-                <div class="col-md-5 text-center card mt-3">
-                    <img src="decision tree.png" alt="star">
-                    <img src="KC Crime Data Accuracy Score.png" alt="star">
-                    <img src="kc_crime_data_datavis1.png" alt="star">
-                    <img src="kc_crime_signs_misconduct.png" alt="star">
-                    <img src="kc_crime_signs_theft.png" alt="star">
-                    <img src="kc_crime_signs_violent.png" alt="star">
-                    <img src="killers accuracy score.png" alt="star">
-                    <img src="killers target variable.png" alt="star">
-                    <img src="Signs vs Proven Victims.png" alt="star">
+                <div class="col-md-12 card">
+                    <h1 class="text-center"> Machine Learning Model Final Results</h1>
+
+                    <h3> Does crime happen more during certain astrological seasons? </h3>
+
+                    <p>The final results from the Logistic Regression Model on the KC Crime Dataset included an Accuracy
+                        Score of 10%. This percentage was raised by 1% after standardizing the data with StandardScaler
+                        from
+                        sklearn, altering the train-test split to 70/30, and changing the Random State to 1 instead of
+                        42.
+                        After reviewing the datasets provided, it was noted the data was organized in a way that could
+                        be
+                        causing the low accuracy. I chose to shuffle the data in the train_test_split phase, but this
+                        did
+                        not alter the results at all.</p>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC_Crime_Final_Accuracy_Score.png?raw=true"
+                        alt="KC Crime Final Accuracy
+                    Score">
+                    <h3>Is there a particular zodiac sign that is more likely to be a murderer?</h3>
+
+                    <p>Following the results showing a slight improvement of accuracy on the KC Crime Dataset, I
+                        implemented similar updates on the Serial Killer dataset. After standardizing the data with
+                        StandardScaler and altering the train-test split to 70/30, the accuracy score is now 11%. Just
+                        like
+                        the other dataset, shuffling the data during train_test_split did not change the outcomes.</p>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/Killers_Final_Accuracy_Score.png?raw=true"
+                        alt="Killers Final Accuracy
+                        Score">
+                    <h1>Machine Learning Conclusion</h1>
+
+                    <h3>KC Crime Dataset Confusion Matrix</h3>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC_Crime_Confusion_Matrix.png?raw=true
+                        " alt="KC Crime Confusion Matrix">
+                    <h3>Serial Kilers Confusion Matrix</h3>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/Killers_Confusion_Matrix.png?raw=true"
+                        alt="Killers Confusion
+                    Matrix" <h3>KC Crime Dataset Classification Report</h3>
+
+                    <p>The results in the Classification Report for the KC Crime Dataset show this Logistic Regression
+                        model can not accurately predict the answers we were looking for on this dataset. The precision,
+                        recall, and f1 scores are all very low.</p>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC_Crime_Classification_Report.png?raw=true"
+                        alt="KC Crime Class Report">
+                    <h3>Serial Killers Classification Report</h3>
+                    <p>
+                        As seen in the pictured Classification Report, the precision scores are all 14% or below -
+                        showing
+                        the amount of false positives is high. The recall scores are also quite low, meaning the
+                        proportion
+                        of actual positives correctly classified are low. The F1 score, a combination of the precision
+                        and
+                        recall scores, is also low. These results show the Logistic Regression model can not accurately
+                        answer our questions.</p>
+
+                    <img src="https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/Killers_Classifcation_Report.png?raw=true"
+                        alt="Killers Class Report">
+                    <p>
+                        If this analysis were to continue, the datasets should be re-analyzed to make sure they are not
+                        set
+                        up in any sort of order that can skew the machine learning models. Attempting a cluster model
+                        like K
+                        Nearest Neighbors may show more accurate results on both datasets. Changing the features or
+                        introducing new data to the datasets to use as new features could also change the outcome of the
+                        Machine Learning performed during this project.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     <div id="Info" class="tabcontent">
         <div id="container" class="container">
+            <div class="col-md-12 text-center card mt-3">
+                <h1>Signs of the Zodiac</h1>
+            </div>
             <div class="row">
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Jane_Toppan_Aries.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
+                <div class="col-md-7 text-center card mt-3">
                     <p>Aries, the Ram, March 21 – April 19, associated with new beginnings:</p>
                     <p>Positive traits</p>
                     <ul>
@@ -139,8 +197,30 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Taurus</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Taurus, the Bull, April 20 – May 20, associated with material pleasure:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Loving</li>
+                        <li>Warm-hearted</li>
+                        <li>Determined</li>
+                        <li>Patient</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Jealous</li>
+                        <li>Possessive</li>
+                        <li>Inflexible</li>
+                        <li>Self-indulgent</li>
+                    </ul>
+                    <small>You love life and all its pleasures. A good meal, a good drink, a good conversation. Everyone
+                        who meets you instantly sees this joyfulness in your soul. Those who know you well also know you
+                        love your partner to the moon and back and you’d do anything to keep them in your life.
+                        Anything. That poor stranger in the bar wasn’t even flirting, they were just after a good
+                        conversation – much like you. Now you only get to love your baby through the Plexiglas at the
+                        state penitentiary.
+                        Kindred killer: Paul John Knowles, 18 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\HH_Holmes_Taurus.png" alt="star">
@@ -150,13 +230,63 @@
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\David_Berkowicz_Gemini.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Gemini</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Gemini, the Twins, May 20 – June 21, associated with youth & versatility:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Lively</li>
+                        <li>Adaptable</li>
+                        <li>Intellectual</li>
+                        <li>Sociable</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Nervous</li>
+                        <li>Inconsistent</li>
+                        <li>Cunning</li>
+                        <li>Superficial</li>
+                    </ul>
+
+                    <small>When you joined the university’s chemistry department, you were the toast of campus. They
+                        loved your passion, knowledge, and sense of humor. Now, in your third year, your just neurotic
+                        and erratic. Your experiments are considered all Bunsen burner, no compounds. Professor Honeydew
+                        has told you that, without a major breakthrough, you’ll never make tenure while they’re in
+                        charge of the department. That’s no problem, Prof. Honeydew won’t live forever. And it looks
+                        like he had a sever myocardial infarction at lunch. The paramedics couldn’t revive him. No one
+                        would have suspected a thing if your colleague hadn’t wandered through the lab last Friday
+                        evening and seen you working. Life without tenure sounds pretty good when you’re sitting in your
+                        sentencing.
+                        Kindred killer: Samuel Little, 61 confirmed victims.</small>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Cancer</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Cancer, the Crab, June 22 – July 22, associated with family & domesticity:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Intuitive</li>
+                        <li>Tenacious</li>
+                        <li>Loyal</li>
+                        <li>Sympathetic</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Hypersensitive</li>
+                        <li>Pessimistic</li>
+                        <li>Manipulative</li>
+                        <li>Suspicious</li>
+                    </ul>
+
+                    <small>Family is so important, it’s the reason you get up in the morning. You can tell what your
+                        spoiled kids want just by the way they utter your parental moniker. No matter how they might
+                        dismiss your feelings, you’ll do whatever it takes to support them. Nothing will keep you from
+                        nurturing the offspring that verbally gut you every day before you cry yourself to sleep at
+                        night. Not even Nosey Nussbaum, the neighborhood interloper. Of course, it’s kind of difficult
+                        for her to rat out your kid’s schoolwork-for-hire scheme after that blunt force trauma. You’ll
+                        just have to con your teen into helping dispose of the body.
+                        Kindred killer: George Hassell, 13 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Carl_Panzram_Cancer.png" alt="star">
@@ -166,13 +296,64 @@
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Elizabeth_Bathory_Leo.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Leo</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Leo, the Lion, July 23 – Aug 22, associated with openness and caring:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Broad-minded</li>
+                        <li>Ambitious</li>
+                        <li>Self-assured</li>
+                        <li>Generous</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Intolerant</li>
+                        <li>Stubborn</li>
+                        <li>Self-centered</li>
+                        <li>Bossy</li>
+                    </ul>
+
+                    <small>Combining your business ambitions with your desire to help people, you partnered with a
+                        therapist to open a wellness retreat. You found a beautiful tract of land with great facilities
+                        for your start-up. Despite your partners warnings about the neighbors, you invested. Surely, 10
+                        acres would be plenty of cushion between your clients and the locals. Your repeated requests
+                        that they respect you and your clients fall on deaf ears; more accurately, obstinate ears. You
+                        just can’t stand their backwards attitude towards your goals. But you’re through paying to clean
+                        up the mess they make along the stream. But you’re no criminal mastermind, so it took no time
+                        for you to get arrested when your rival’s patriarch turned up stiff & bloated in that same
+                        stream.
+                        Kindred killer: William Suff, 12 confirmed victims.</small>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Virgo</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Virgo, the Virgin, August 23 – September 22, associated with purity & service:</p>
+                    <p>Positive traits
+                    <ul>
+                        <li>Analytical</li>
+                        <li>Practical</li>
+                        <li>Meticulous</li>
+                        <li>Diligent</li>
+                    </ul>
+                    <p>Negative traits
+                    <ul>
+                        <li>Overthinker</li>
+                        <li>Conservative</li>
+                        <li>Meticulous</li>
+                        <li>Fussy</li>
+                    </ul>
+                    <small>Finally, after two long years, you’re given your first account and can’t wait to build a
+                        strong portfolio for the client. You welcome Chet, junior partner, as your advisor. You work
+                        nights and weekends analyzing products and developing a long-term plan. Things are going well,
+                        even if you must keep a tight leash on Chet. He keeps pushing for riskier options, his work is
+                        sloppy, and he makes you second guess yourself and that’s not how you got this far. You remind
+                        him that it’s your account, he tells you to calm down. He attempts to change one of the
+                        investments for something you knew would tank; it’s more than you can stand. Fortunately for
+                        you, he and his yacht ‘disappeared’ during an extended weekend in Key West. You were sure you
+                        planned everything out perfectly, so why are there federal agents in your office?
+                        Kindred killer: Gerald Stano, 22 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Ed_Gein_Virgo.png" alt="star">
@@ -182,13 +363,61 @@
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Andrei_Chikatilo_Libra.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Libra</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Libra, the Balance, September 23 – October 22, associated with justice:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Idealistic</li>
+                        <li>Fair-Minded</li>
+                        <li>Diplomatic</li>
+                        <li>Charming</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Gullible</li>
+                        <li>Grudging</li>
+                        <li>Avoids confrontation</li>
+                        <li>Quarrelsome</li>
+                    </ul>
+                    <small>You found a group of like-minded activists and started a grass roots campaign to clean up the
+                        park. Your charismatic problem solving even earned you the president’s chair. Jenny keeps
+                        testing your limits, showing up late, lying about her progress and just generally being bad
+                        help. You just don’t want to boot her from the project, but you really resent her for abusing
+                        your kindness. Claiming to be the president of the project on her resume? That’s too far. When
+                        you cornered her, she denied everything. You don’t have any problems with her in the office
+                        anymore, but your campaign is a success and she’s sure to turn up when the work starts.
+                        Kindred killer: Patrick Kearney, 21 confirmed victims.</small>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Scorpio</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Scorpio, the Scorpion, October – November, associated with passion & power:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Determined</li>
+                        <li>Passionate</li>
+                        <li>Intuitive</li>
+                        <li>Friendly</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Obsessive</li>
+                        <li>Jealous</li>
+                        <li>Cunning</li>
+                        <li>Manipulative</li>
+                    </ul>
+                    <small>Your budding romance brand is going public! PowerPlays.com has surpassed one million users
+                        thanks to your horizontally integrated online zine that includes an online store and a dating
+                        app, among other things, all in one place. You and your partner have poured you hearts and bank
+                        accounts into the company, so it wasn’t surprising when you hooked up. Now you struggle to focus
+                        on work. You feel insecure when they charm business partners. They’re tired of your excuses to
+                        work over nights and weekends. A little alone time under the guise of meeting potential
+                        investors should bring them around. How can they reject you? They just don’t understand your
+                        feelings. You didn’t mean to bounce their head off the coffee table like that. That’ll leave a
+                        mark…on their head and your romance brand.
+                        Kindred killer: Carl Eugene Watts, 22 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Bell_Gunnes_Scorpio.png" alt="star">
@@ -198,13 +427,60 @@
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Ted_Bundy_Saggitarius.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Sagittarius</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Sagittarius, the Archer, November 22 – December 21, associated with travel & expansion:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Honest</li>
+                        <li>Free-spirited</li>
+                        <li>Idealistic</li>
+                        <li>Ethical</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Tactless</li>
+                        <li>Irresponsible</li>
+                        <li>Superficial</li>
+                        <li>Reckless</li>
+                    </ul>
+
+                    <small>Oh, to be back on the open road. The wind in your hair. Surveying the land you come from and
+                        beyond. You just need a new set of wheels for your adventures and that means selling your old
+                        RV. After all, it’s been well loved and has been totally dependable for nearly 200,000
+                        miles…without regular maintenance. You were sure it was solid and that little old couple just
+                        didn’t have a lot of money. Except they went through a guardrail before you even signed the
+                        papers for your new road dog. Enjoy that bus ride to prison.
+                        Kindred killer: Ted Bundy, 28 confirmed victims.</small>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Capricorn</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Capricorn, the Goat, December 22 – January 19, associated with hard work & business:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Patient</li>
+                        <li> Stable</li>
+                        <li>Intellectual</li>
+                        <li>Prudent</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li> Grudging</li>
+                        <li>Fatalistic</li>
+                        <li>Condescending</li>
+                        <li>Rigid</li>
+                    </ul>
+
+
+                    <small>Hard work really does pay off. All those years of saving and investing. Planning and
+                        building. It created a healthy plumbing business. Now, thanks to the new guy, you’re being sued.
+                        Surely your business will go down the drain, taking your marriage along with it. You’ll
+                        absolutely die penniless and alone. If Dave had just listened to your constant yet masterful
+                        advice this never would have happened. At least you live in Texas where you’ll be executed in
+                        front of a crowd. But you’ll still die penniless. Thanks, Dave.
+                        Kindred killer: Dean Corll, 28 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Harold_Shipman_Capricorn.png" alt="star">
@@ -214,13 +490,65 @@
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\Bob_Berdella_Aquarius.png" alt="star">
                 </div>
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Aquarius</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Aquarius, the Water Bearer, January 20 – February 18, associated with the future and the unusual:
+                    </p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Independent</li>
+                        <li>Friendly</li>
+                        <li>Original</li>
+                        <li> Stimulating</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li> Detached</li>
+                        <li>Unemotional</li>
+                        <li>Contrary</li>
+                        <li>Unpredictable</li>
+                    </ul>
+                    <small>You’ve always loved all things obscure, occult, and strange, even as a child. When you
+                        learned sword swallowing, it seemed only natural to start your own side show. It was easy enough
+                        to convince performers to join your troupe with your outgoing magnetism. Keeping it together is
+                        another story. The whole lot is overly sensitive, too involved and generally disagreeable over
+                        your management. However, arbitrary changes in plans and expectations keep them guessing; from
+                        show times to pay scales, nothing is consistent. The resident knife-thrower accuses you of
+                        skimming the till, so you learn knife-throwing yourself. To show dominance, you call them
+                        together to show them your new skills. You figure grazing the conjoined twins would be harmless,
+                        but the blade got away from you. The troupe now needs another set of conjoined twins, and you
+                        need a good defense attorney.
+                        Kindred killer: to Gary Ridgway, 49 confirmed victims.</small>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center card mt-3">
-                    <p>Pisces</p>
+                <div class="col-md-7 text-center card mt-3">
+                    <p>Pisces, the Fish, February 19 – March 20, associated with emotions:</p>
+                    <p>Positive traits</p>
+                    <ul>
+                        <li>Sympathetic</li>
+                        <li>Imaginative</li>
+                        <li>Sensitive</li>
+                        <li>Selfless</li>
+                    </ul>
+                    <p>Negative traits</p>
+                    <ul>
+                        <li>Weak-willed</li>
+                        <li>Escapist</li>
+                        <li>Paranoid</li>
+                        <li>Victim mentality</li>
+                    </ul>
+
+                    <small>New relationship energy is powerful, and your new flame swept you off your feet. Lately
+                        they’ve had a tough go, having lost their job at the restaurant. You don’t mind paying the
+                        bills, but they won’t even Uber or follow-up on job postings you’ve shared. Meanwhile you’ve
+                        been working overtime and cutting back on yourself. Gaming has been your one and only respite,
+                        but they sold their console to have money for drinks this weekend. With friends you’ve never
+                        heard of before. You can see through the lies and won’t abide their cheating ways. At least
+                        you’ll keep others from getting hurt, or so you thought until you got that text saying your
+                        partner never showed up for drinks. They’re gonna call the cops.
+                        Kindred killer: John Wayne Gacy, 33 confirmed victims.</small>
+
                 </div>
                 <div class="col-md-5 text-center card mt-3">
                     <img src="\Illustrations\Killers_Blue\John_Wayne Gacy_Pisces.png" alt="star">
