@@ -76,8 +76,12 @@ If this analysis were to continue, the datasets should be re-analyzed to make su
 ### Github -- Outline of Project:
 ![project_flowchart_2.png](https://github.com/rulamia/Horrorscopes/blob/Angelique/project_flowchart_2.png) 
 
-### Github -- Link to Draft Presentation Slides:
-https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
+### Github -- Links:
+  - Links to Presentation Slides
+  https://docs.google.com/presentation/d/1n4ICouEj4aP_hmIUv2Y82vsaKj3_vamR2qQDVS9gTEQ/edit?usp=sharing
+  
+  -Links to Dashboard
+  https://rulamia.github.io/Horrorscopes/
 
 ## Machine Learning Model
 ### Machine Learning Model -- Questions to Be Answered:
@@ -118,19 +122,37 @@ Due to the presence of categorical data and the desire for simplicity, I chose l
 
 ### Machine Learning Model -- Description of Model Training:
 
-### Machine Learning Model -- Description of Current Accuracy Score:
-The accuracy scores for both models are very, very low. The KC Crime Data Logistic Regression's score is a disappointing 9%. Even worse, the Killers Logistic Regression is only 7%.
+### Machine Learning Model -- Description of Confusion Matrix and Final Accuracy Score:
+<b> Final Accuracy Scores: </b>
+The final results from the Logistic Regression Model on the KC Crime Dataset included an Accuracy Score of 10%. This percentage was raised by 1% after standardizing the data with StandardScaler from sklearn, altering the train-test split to 70/30, and changing the Random State to 1 instead of 42. After reviewing the datasets provided, it was noted the data was organized in a way that could be causing the low accuracy. I chose to shuffle the data in the train_test_split phase, but this did not alter the results at all.
 
-KC Crime Data Logistic Regession Accuracy Score:
-![KC Crime Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/KC%20Crime%20Data%20Accuracy%20Score.png?raw=true)
+KC Crime Data Logistic Regression Final Accuracy Score:
+![KC_Crime_Final_Accuracy_Score.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Resource/KC_Crime_Final_Accuracy_Score.png)
 
-Killers Crime Data Logistic Regression Accuracy Score:
-![Killers Accuracy](https://github.com/rulamia/Horrorscopes/blob/Jessica/Resource/killers%20accuracy%20score.png?raw=true)
+Following the results showing a slight improvement of accuracy on the KC Crime Dataset, I implemented similar updates on the Serial Killer dataset. After standardizing the data with StandardScaler and altering the train-test split to 70/30, the accuracy score is now 11%. Just like the other dataset, shuffling the data during train_test_split did not change the outcomes.
+
+Serial Killers Logistic Regession Final Accuracy Score:
+![Killers_Final_Accuracy_Score.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Resource/Killers_Final_Accuracy_Score.png)
 
 I believe the decision to use Logistic Regression with the features chosen from each dataset was wrong. Clustering my also produce results that show no correlation between the data and our questions, but I believe they would be a more realistic test for the data.
 
-### Machine Learning Model -- How Does it Answer the Questions?
-Currently, the accuracy score is so low it simply answers "no" to our questions about whether more crime happens during certain astrological seasons and if there is a particular zodiac sign more likely to commit murder. This makes logical sense.
+<b> Confusion Matrixes: </b>
+
+KC Crime Confusion Matrix:
+![KC_Crime_Confusion_Matrix.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Resource/KC_Crime_Confusion_Matrix.png)
+
+Killers Confusion Matrix:
+![Killers_Confusion_Matrix.png](https://raw.githubusercontent.com/rulamia/Horrorscopes/Jessica/Resource/Killers_Confusion_Matrix.png)
+
+### Machine Learning Model -- How Does it Answer the Questions?:
+Question: Does more crime happen during certain astrological seasons?
+Answer: The accuracy score is so low it simply answers "no" to our question. This makes logical sense. The results in the Classification Report for the KC Crime Dataset show this Logistic Regression model can not accurately predict the answers we were looking for on this dataset. The precision, recall, and f1 scores are all very low.
+
+Question: Are certain astrological signs more likely to be serial killers?
+Answer: As seen in the Classification Report, the precision scores are all 14% or below - showing the amount of false positives is high. The recall scores are also quite low, meaning the proportion of actual positives correctly classified are low. The F1 score, a combination of the precision and recall scores, is also low. These results show the Logistic Regression model can not accurately answer our questions. This also makes logical sense.
+
+### Machine Learning Model -- Next Phases Using Statistical Analysis:
+In future phases of the project, we could try using a Chi-Squared Test to determine if there is a difference in the categorical frequencies between groups.
 
 ## Database
 
