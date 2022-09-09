@@ -1,0 +1,15 @@
+﻿Requirements.txt
+
+
+Pandas
+Pathlib
+Matplotlib
+Seaborn
+Numpy
+Scikitlearn
+SQLAlchemy
+BeautifulSoup
+Decimal
+Requests
+Datetime
+Mito
